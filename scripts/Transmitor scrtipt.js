@@ -25,7 +25,7 @@ function init(e){ // start
 	initData();
 	//
 	checkTick(); //initial tick
-	block.getTimers().forceStart(checkTickTimerId, tickTimerInterval, true);
+	block.g etTimers().forceStart(checkTickTimerId, tickTimerInterval, true);
 	//
 	x = parseFloat(block.getX())+0.5;
 	y = parseFloat(block.getY())+0.5;
@@ -59,13 +59,11 @@ function timer(e){
 			break;
 	}
 }
-
 function checkTick(){
 	world.spawnParticle("smoke",x,y,z,0,0.9,0,0.1,20);
 	updateInbox();
 	updateTransmitor();
 }
-
 function updateInbox(){
 	var b = world.getBlock(block.getX(),block.getY()+1,block.getZ());
 	if (b.isContainer()){
@@ -83,8 +81,6 @@ function updateInbox(){
 		});
 	}
 }
-
-
 function updateTransmitor(){ //updates the transmitor to see the deals that are now active
 	var b = world.getBlock(block.getX(),block.getY()+2,block.getZ());
 	var goodOffers =[];
