@@ -1,0 +1,78 @@
+#TODO: Provide instructions for modpack devs.
+---
+WorldName: "Biome Bundle"
+Overworld:
+  PresetName: "Biome Bundle"
+  Seed: ""
+  GameType: "Survival"
+  BonusChest: false
+  AllowCheats: false
+  WorldBorderRadiusInChunks: 1000
+  PregeneratorRadiusInChunks: 0
+  Settings:
+    DimensionPortalMaterials:
+    - "DIRT"
+    DimensionBelow: ""
+    DimensionAbove: ""
+    DimensionBelowHeight: 0
+    DimensionAboveHeight: 256
+    TeleportToSpawnOnly: false
+    WelcomeMessage: ""
+    DepartMessage: ""
+    HasSkyLight: true
+    IsSurfaceWorld: true
+    CanRespawnHere: true
+    DoesWaterVaporize: false
+    DoesXZShowFog: false
+    UseCustomFogColor: false
+    FogColorRed: 0.20000000298023224
+    FogColorGreen: 0.029999999329447746
+    FogColorBlue: 0.029999999329447746
+    IsSkyColored: true
+    CloudHeight: 128
+    CanDoLightning: true
+    CanDoRainSnowIce: true
+    IsNightWorld: false
+    VoidFogYFactor: 0.03125
+    GravityFactor: 0.08
+    ShouldMapSpin: false
+    CanDropChunk: true
+    RespawnDimension: 0
+    MovementFactor: 1
+    ItemsToAddOnJoinDimension: ""
+    ItemsToRemoveOnJoinDimension: ""
+    ItemsToAddOnLeaveDimension: ""
+    ItemsToRemoveOnLeaveDimension: ""
+    ItemsToAddOnRespawn: ""
+    SpawnPointSet: false
+    SpawnPointX: 0
+    SpawnPointY: 0
+    SpawnPointZ: 0
+    PlayersCanBreakBlocks: true
+    ExplosionsCanBreakBlocks: true
+    PlayersCanPlaceBlocks: true
+  GameRules:
+    CommandBlockOutput: true
+    DisableElytraMovementCheck: false
+    DoDaylightCycle: true
+    DoEntityDrops: true
+    DoFireTick: true
+    DoLimitedCrafting: false
+    DoMobLoot: true
+    DoMobSpawning: true
+    DoTileDrops: true
+    DoWeatherCycle: true
+    GameLoopFunction: true
+    KeepInventory: false
+    LogAdminCommands: true
+    MaxCommandChainLength: 65536
+    MaxEntityCramming: 24
+    MobGriefing: true
+    NaturalRegeneration: true
+    RandomTickSpeed: 3
+    ReducedDebugInfo: false
+    SendCommandFeedback: true
+    ShowDeathMessages: true
+    SpawnRadius: 10
+    SpectatorsGenerateChunks: true
+Dimensions: []

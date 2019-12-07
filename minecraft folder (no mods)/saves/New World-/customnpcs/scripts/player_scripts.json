@@ -1,0 +1,278 @@
+{
+    "ScriptEnabled": 0b,
+    "ScriptConsole": [
+        {
+            "Long": 1575058675876L,
+            "String": " tab 1:
+javax.script.ScriptException: <eval>:14:8 Expected comma but found }
+        }
+        ^ in <eval> at line number 14 at column number 8
+	at jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:455)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.compileImpl(NashornScriptEngine.java:522)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.compileImpl(NashornScriptEngine.java:509)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:397)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.eval(NashornScriptEngine.java:152)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at noppes.npcs.controllers.ScriptContainer.run(ScriptContainer.java:152)
+	at noppes.npcs.controllers.ScriptContainer.run(ScriptContainer.java:126)
+	at noppes.npcs.controllers.data.PlayerScriptData.runScript(PlayerScriptData.java:88)
+	at noppes.npcs.EventHooks.onPlayerInit(EventHooks.java:315)
+	at noppes.npcs.controllers.data.PlayerScriptData.runScript(PlayerScriptData.java:82)
+	at noppes.npcs.EventHooks.onPlayerTick(EventHooks.java:321)
+	at noppes.npcs.ScriptPlayerEventHandler.onServerTick(ScriptPlayerEventHandler.java:78)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_277_ScriptPlayerEventHandler_onServerTick_PlayerTickEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraftforge.fml.common.FMLCommonHandler.onPlayerPreTick(FMLCommonHandler.java:365)
+	at net.minecraft.entity.player.EntityPlayer.func_70071_h_(EntityPlayer.java:190)
+	at net.minecraft.entity.player.EntityPlayerMP.func_71127_g(EntityPlayerMP.java:382)
+	at net.minecraft.network.NetHandlerPlayServer.func_73660_a(NetHandlerPlayServer.java:173)
+	at net.minecraftforge.fml.common.network.handshake.NetworkDispatcher$1.func_73660_a(NetworkDispatcher.java:209)
+	at net.minecraft.network.NetworkManager.func_74428_b(NetworkManager.java:285)
+	at net.minecraft.network.NetworkSystem.func_151269_c(NetworkSystem.java:180)
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:790)
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:668)
+	at net.minecraft.server.integrated.IntegratedServer.func_71217_p(IntegratedServer.java:185)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:526)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: jdk.nashorn.internal.runtime.ParserException: <eval>:14:8 Expected comma but found }
+        }
+        ^
+	at jdk.nashorn.internal.parser.AbstractParser.error(AbstractParser.java:292)
+	at jdk.nashorn.internal.parser.AbstractParser.error(AbstractParser.java:277)
+	at jdk.nashorn.internal.parser.Parser.arrayLiteral(Parser.java:2089)
+	at jdk.nashorn.internal.parser.Parser.primaryExpression(Parser.java:1988)
+	at jdk.nashorn.internal.parser.Parser.memberExpression(Parser.java:2513)
+	at jdk.nashorn.internal.parser.Parser.leftHandSideExpression(Parser.java:2374)
+	at jdk.nashorn.internal.parser.Parser.unaryExpression(Parser.java:3140)
+	at jdk.nashorn.internal.parser.Parser.assignmentExpression(Parser.java:3346)
+	at jdk.nashorn.internal.parser.Parser.propertyAssignment(Parser.java:2303)
+	at jdk.nashorn.internal.parser.Parser.objectLiteral(Parser.java:2157)
+	at jdk.nashorn.internal.parser.Parser.primaryExpression(Parser.java:1990)
+	at jdk.nashorn.internal.parser.Parser.memberExpression(Parser.java:2513)
+	at jdk.nashorn.internal.parser.Parser.leftHandSideExpression(Parser.java:2374)
+	at jdk.nashorn.internal.parser.Parser.unaryExpression(Parser.java:3140)
+	at jdk.nashorn.internal.parser.Parser.assignmentExpression(Parser.java:3346)
+	at jdk.nashorn.internal.parser.Parser.variableStatement(Parser.java:1090)
+	at jdk.nashorn.internal.parser.Parser.statement(Parser.java:886)
+	at jdk.nashorn.internal.parser.Parser.sourceElements(Parser.java:775)
+	at jdk.nashorn.internal.parser.Parser.program(Parser.java:711)
+	at jdk.nashorn.internal.parser.Parser.parse(Parser.java:284)
+	at jdk.nashorn.internal.parser.Parser.parse(Parser.java:250)
+	at jdk.nashorn.internal.runtime.Context.compile(Context.java:1207)
+	at jdk.nashorn.internal.runtime.Context.compileScript(Context.java:1179)
+	at jdk.nashorn.internal.runtime.Context.compileScript(Context.java:594)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.compileImpl(NashornScriptEngine.java:520)
+	... 26 more"
+        }
+    ],
+    "Scripts": [
+        {
+            "Script": "var BGM = {
+    key: 25, //BGM Controller Key, DefaultKey: P(25)
+    timer: 10, //BGM Timer ID, Default: 10
+    wait: 20, //BGM Start waiter time, Default: 20
+    sound: [\"basedrum\",\"bass\",\"bell\",\"chime\",\"flute\",\"guitar\",\"harp\",\"hat\",\"pling\",\"snare\",\"xylophone\"], //BGM Sound Mode
+    play: [\"cycle\", \"cycle_once\",\"order\",\"random\"], //BGM Play Mode
+    songs: //BGM Songs List
+    [
+        {
+            name: \"Bad Apple\", //BGM Song name
+            speed: 5, //BGM Song play speed
+            data: [5,7,8,10,12,-1,17,15,12,-1,5,-1,12,10,8,7,5,7,8,10,12,-1,10,8,7,5,7,8,7,5,3,7,5,7,8,10,12,-1,17,15,12,-1,5,-1,12,10,8,7,5,7,8,10,12,-1,10,8,7,-1,8,-1,10,-1,12,-1,5,7,8,10,12,-1,17,15,12,-1,5,-1,12,10,8,7,5,7,8,10,12,-1,10,8,7,5,7,8,7,5,3,7,5,7,8,10,12,-1,17,15,12,-1,5,-1,12,10,8,7,5,7,8,10,12,-1,10,8,7,-1,8,-1,10,-1,12,-1,15,17,12,10,12,-1,10,12,15,17,12,10,12,-1,10,12,10,8,7,3,5,-1,3,5,7,8,10,12,5,-1,10,12,15,17,12,10,12,-1,10,12,15,17,12,10,12,-1,10,12,10,8,7,3,5,-1,3,5,7,8,10,12,5,-1,10,12,15,17,12,10,12,-1,10,12,15,17,12,10,12,-1,10,12,10,8,7,3,5,-1,3,5,7,8,10,12,5,-1,10,12,15,17,12,10,12,-1,10,12,15,17,12,10,12,-1,17,19,20,19,17,15,12,-1,10,12,10,8,7,3,5,-1,10,12,15,17,12,10,12,-1,10,12,15,17,12,10,12,-1,10,12,10,8,7,3,5,-1,3,5,7,8,10,12,5,-1,10,12,15,17,12,10,12,-1,10,12,15,17,12,10,12,-1,10,12,10,8,7,3,5,-1,3,5,7,8,10,12,5,-1,10,12,15,17,12,10,12,-1,10,12,15,17,12,10,12,-1,10,12,10,8,7,3,5,-1,3,5,7,8,10,12,5,-1,10,12,15,17,12,10,12,-1,10,12,15,17,12,10,12,-1,17,19,20,19,17,15,12,-1,10,12,10,8,7,3,5,-1] //BGM Song data
+        }
+        }
+    ]
+};
+
+function keyPressed(e){
+    if(e.key==BGM.key){
+        if(!e.player.storeddata.has(\"BGM\")){
+            e.player.storeddata.put(\"BGM\", reObj({sound:0,play:0,song:0,time:0,gui:false}));
+        }
+        updateGui(e.player.showChestGui(2), e);
+        reGui(e.player);
+    }
+}
+
+function tick(e){
+    if(reObj(e.player.storeddata.get(\"BGM\")).gui){
+        updateGui(e.player.openContainer, e);
+    }
+}
+
+function customChestClicked(e){
+    var pt = e.player.timers;
+    var data = reObj(e.player.storeddata.get(\"BGM\"));
+    switch (e.slot) {
+        case 37:
+            data.time = 0;
+            data.song --;
+            if(data.song<0) data.song += BGM.songs.length;
+            break;
+        case 40:
+            data.time = 0;
+            data.song ++;
+            if(data.song==BGM.songs.length) data.song = 0;
+            break;
+        case 38:
+            if(pt.has(BGM.timer)){
+                pt.stop(BGM.timer);
+            }else{
+                pt.forceStart(BGM.timer, 0, true);
+            }
+            break;
+        case 39:
+            if(pt.has(BGM.timer)){
+                pt.stop(BGM.timer);
+            }
+            data.time = 0;
+            break;
+        case 42:
+            data.sound++;
+            if(data.sound == BGM.sound.length) data.sound=0;
+            break;
+        case 43:
+            data.play++;
+            if(data.play == BGM.play.length) data.play=0;
+            break;
+        default:
+            break;
+    }
+    e.player.storeddata.put(\"BGM\", reObj(data));
+    updateGui(e.player.openContainer, e);
+}
+
+function customChestClosed(e){
+    reGui(e.player);
+}
+
+function updateGui(chest, e){
+    var w = e.API.getIWorld(0);
+    var data = reObj(e.player.storeddata.get(\"BGM\"));
+    var song = BGM.songs[data.song];
+    chest.setName(\"BGM: \" + (song.name));
+    var fill = w.createItem(\"minecraft:diamond_hoe\", 1, 1);
+    fill.nbt.setInteger(\"HideFlags\", 63);
+    fill.nbt.setInteger(\"Unbreakable\", 1);
+    fill.nbt.setIntegerArray(\"AttributeModifiers\", []);
+    fill.setCustomName(\"§r\");
+    chest.setSlot(36, fill);
+    var temp = fill.copy();
+    temp.setItemDamage(7);
+    temp.setCustomName(\"§r[Prev Song]\");
+    chest.setSlot(37, temp);
+    temp = fill.copy();
+    temp.setItemDamage(e.player.timers.has(BGM.timer)?4:3);
+    temp.setCustomName(\"§r[\" + (e.player.timers.has(BGM.timer)?\"Pause\":\"Play\") + \"]\");
+    chest.setSlot(38, temp);
+    temp = fill.copy();
+    temp.setItemDamage(5);
+    temp.setCustomName(\"§r[Stop]\");
+    chest.setSlot(39, temp);
+    temp = fill.copy();
+    temp.setItemDamage(6);
+    temp.setCustomName(\"§r[Next Song]\");
+    chest.setSlot(40, temp);
+    chest.setSlot(41, fill);
+    temp = fill.copy();
+    temp.setItemDamage(data.sound + 25);
+    temp.setCustomName(\"§r[\" + BGM.sound[data.sound] + \"]\");
+    chest.setSlot(42, temp);
+    temp = fill.copy();
+    temp.setItemDamage(data.play + 36);
+    temp.setCustomName(\"§r[\" + BGM.play[data.play] + \"]\");
+    chest.setSlot(43, temp);
+    chest.setSlot(44, fill);
+    var SongTime = (song.data.length*song.speed+BGM.wait*2)/20;
+    var PlayTime = (data.time)/20;
+    var PlayBar = (PlayTime/SongTime)*9;
+    for(var i = 0; i<9; i++){
+        temp = fill.copy();
+        temp.setItemDamage(8);
+        if(PlayBar>i+1){
+            temp.setItemDamage(8+16);
+        }else if(PlayBar<i){
+            temp.setItemDamage(8);
+        }else{
+            temp.setItemDamage(8+Math.ceil((PlayBar-i)*16));
+        }
+        temp.setCustomName(\"§r\" + reTime(PlayTime) + \"§7/§r\" + reTime(SongTime));
+        chest.setSlot(45+i, temp);
+    }
+}
+
+function timer(e){
+    if(e.id==BGM.timer){
+        var pl = e.player;
+        var data = reObj(pl.storeddata.get(\"BGM\"));
+        var song = BGM.songs[data.song];
+        var PlayTime = data.time-BGM.wait;
+        if(!(PlayTime%song.speed)){
+            if((song.data[PlayTime/song.speed]) && song.data[PlayTime/song.speed] != -1){
+                pl.playSound(\"block.note.\" + BGM.sound[data.sound], 1, Math.pow(2, (song.data[PlayTime/song.speed]-12)/12));
+            }
+        }
+        data.time ++;
+        if(PlayTime>(song.data.length*song.speed+BGM.wait)){
+            data.time = 0;
+            switch (data.play){
+                case 0:
+                    data.song ++;
+                    if(data.song==BGM.songs.length) data.song = 0;
+                    pl.sendNotification(\"Now Playing:\", BGM.songs[data.song].name, 2);
+                    break;
+                case 1:
+                    pl.sendNotification(\"Now Playing:\", song.name, 2);
+                    break;
+                case 2:
+                    if(data.song==BGM.songs.length-1){
+                        pl.timers.stop(BGM.timer);
+                    }else{
+                        data.song ++;
+                        if(data.song==BGM.songs.length) data.song = 0;
+                        pl.sendNotification(\"Now Playing:\", BGM.songs[data.song].name, 2);
+                    }
+                    break;
+                case 3:
+                    data.song = Math.floor(Math.random()*BGM.songs.length);
+                    if(data.song==BGM.songs.length) data.song --;
+                    pl.sendNotification(\"Now Playing:\", BGM.songs[data.song].name, 2);
+                    break;
+                default:
+                    break;
+            }
+        }
+        pl.storeddata.put(\"BGM\", reObj(data));
+    }
+}
+
+function reGui(pl){
+    var data = reObj(pl.storeddata.get(\"BGM\"));
+    data.gui = !data.gui;
+    pl.storeddata.put(\"BGM\", reObj(data));
+}
+
+function reObj(value){
+    if(typeof value == \"object\"){
+        return JSON.stringify(value);
+    }else{
+        return JSON.parse(value);
+    }
+}
+
+function reTime(value){
+    var sec = Math.ceil(value%60);
+    var min = (value-(value%60))/60;
+    if(sec<10)(sec = \"0\" + sec);
+    if(min<10)(min = \"0\" + min);
+    return min + \":\" + sec;
+}",
+            "Console": [
+            ],
+            "ScriptList": [
+            ]
+        }
+    ],
+    "ScriptLanguage": "ECMAScript"
+}
