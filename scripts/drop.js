@@ -6,7 +6,7 @@ function interact(e){
 }
 function testSpawn(e){ //to test the drop
 		tested=true;
-    e.npc.setPosition(e.npc.getX(),e.npc.getY()+50,e.npc.getZ());
+    e.npc.setPosition(e.npc.getX(),256,e.npc.getZ());
 }
 function shootToSky(e){ //to send to space
 

@@ -25,7 +25,7 @@ function init(e){ // start
 	initData();
 	//
 	checkTick(); //initial tick
-	block.g etTimers().forceStart(checkTickTimerId, tickTimerInterval, true);
+	block.getTimers().forceStart(checkTickTimerId, tickTimerInterval, true);
 	//
 	x = parseFloat(block.getX())+0.5;
 	y = parseFloat(block.getY())+0.5;
@@ -111,6 +111,28 @@ function updateTransmitor(){ //updates the transmitor to see the deals that are 
 	checkOffers(goodOffers);
 }
 function checkOffers(offers){
+	var inputs = [
+		{block:world.getBlock(block.getX()+1,block.getY(),block.getZ()),container:null},
+		{block:world.getBlock(block.getX()-1,block.getY(),block.getZ()),container:null},
+		{block:world.getBlock(block.getX(),block.getY(),block.getZ()+1),container:null},
+		{block:world.getBlock(block.getX(),block.getY(),block.getZ()-1),container:null}
+	] // array of all the possible inputs for deals.
+	inputs.forEach(function (input){
+		if (input.block.isContainer()){
+			input.container = input.block.getContainer();
+		}
+	});
+	inputs.forEach(function(input){
+		if (input.getContainer()!=null){ // if it has inventory
+			var container = input.getContainer();
+			offers.forEach(function(offer){ //runs through the offers of each input
+				if (container.count(offer.buy,false,false)>=offer.buyAmount){
+					handshake(offer, input);
+				}
+			});
+		}
+	});
+	//
 	var inputBlocks = [
 		world.getBlock(block.getX()+1,block.getY(),block.getZ()),
 		world.getBlock(block.getX()-1,block.getY(),block.getZ()),
@@ -123,27 +145,22 @@ function checkOffers(offers){
 			inputContainers.push(b.getContainer());
 		}
 	});
-	inputContainers.forEach(function (c){
+	inputContainers.forEach(function (container){
 		offers.forEach(function(offer){
-			var a = offer.buyAmount;
-			if (c.count(offer.buy,false,false)>=offer.buyAmount){
-				for (var i=0;i<c.getItems().length;i++){
-					var slot = c.getItems()[i];
+			if (container.count(offer.buy,false,false)>=offer.buyAmount){
+				for (var i=0;i<container.getItems().length;i++){
+					var slot = container.getItems()[i];
 					a = a-slot.getStackSize(); //The amount of items we need to leave this slot with
 					if (a<0) slot.setStackSize(a*-1);
 					else slot.setStackSize(0);
-					sendPayload(offer);
+					handshake(offer, null);
 				}
 			}
 		});
 	});
 }
-function sendPayload(offer){
-	var eChest = world.createEntity("minecraft:falling_block");
-	world.spawnEntity(eChest);
-	eChest.setPosition(x,y+20,z);
-	eChest.spawn();
-
+function handshake(offer, paymentInv){ //accepts the offer and sends reward
+	block.API.getClones().spawn(paymentInv.block.getX(),paymentInv.block.getY(),paymentInv.block.getZ(),0,)
 }
 function purge(container,slot){
 	container.setSlot(slot,null);
