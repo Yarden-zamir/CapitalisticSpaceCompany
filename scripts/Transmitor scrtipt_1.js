@@ -134,10 +134,34 @@ function checkOffers(offers){
 		}
 	});
 	//
+	var inputBlocks = [
+		world.getBlock(block.getX()+1,block.getY(),block.getZ()),
+		world.getBlock(block.getX()-1,block.getY(),block.getZ()),
+		world.getBlock(block.getX(),block.getY(),block.getZ()+1),
+		world.getBlock(block.getX(),block.getY(),block.getZ()-1),
+	]
+	var inputContainers = [];
+	inputBlocks.forEach(function (b){
+		if (b.isContainer()){
+			inputContainers.push(b.getContainer());
+		}
+	});
+	inputContainers.forEach(function (container){
+		offers.forEach(function(offer){
+			if (container.count(offer.buy,false,false)>=offer.buyAmount){
+				for (var i=0;i<container.getItems().length;i++){
+					var slot = container.getItems()[i];
+					var a = a-slot.getStackSize(); //The amount of items we need to leave this slot with
+					if (a<0) slot.setStackSize(a*-1);
+					else slot.setStackSize(0);
+					handshake(offer, null);
+				}
+			}
+		});
+	});
 }
 function handshake(offer, paymentInv){ //accepts the offer and sends reward
-	world.broadcast("deal "+paymentInv.block.getX()+" "+256.0+" "+paymentInv.block.getZ());
-	event.API.getClones().spawn(paymentInv.block.getX()+0.5,256.0,paymentInv.block.getZ()+0.5,1,"Chest",world);
+	event.API.getClones().spawn(paymentInv.block.getX(),256.0,paymentInv.block.getZ(),1,"Chest",world);
 }
 function purge(container,slot){
 	container.setSlot(slot,null);
