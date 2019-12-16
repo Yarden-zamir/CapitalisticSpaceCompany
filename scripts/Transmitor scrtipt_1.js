@@ -18,6 +18,8 @@ var dealType = {
 var companies;
 var offers;
 //
+var textArray = [];
+//
 var event;
 function init(e){ // start
 	event = e;
@@ -64,6 +66,16 @@ function checkTick(){
 	world.spawnParticle("smoke",x,y,z,0,0.9,0,0.1,20);
 	updateInbox();
 	updateTransmitor();
+	updateTextPanel(textArray);
+}
+function updateTextPanel(arrayOfText){
+	var compleateText = "";
+	arrayOfText.forEach(function (line){
+		compleateText=compleateText+line+"\n";
+	});
+	if (compleateText!=block.getTextPlane().getText()){ // checks if it should change
+		block.getTextPlane.setText(compleateText);
+	}
 }
 function updateInbox(){
 	var inboxBlock = world.getBlock(block.getX(),block.getY()+1,block.getZ());
@@ -81,7 +93,8 @@ function updateInbox(){
 			inbox.setSlot(index,itemOffer);
 		});
 	}else{
-
+		textArray.push("No inbox inventory, put a container above this transmitor to fix");
+		block.getTextPlane().setText("No inbox inventory, put a container above this transmitor to fix");
 	}
 }
 function updateTransmitor(){ //updates the transmitor to see the deals that are now active
@@ -89,7 +102,6 @@ function updateTransmitor(){ //updates the transmitor to see the deals that are 
 	var goodOffers =[];
 	if (transmitorBlock.isContainer()){
 		transmitor = transmitorBlock.getContainer();
-		block.getTextPlane().setText("");//reset panel
 		for (var i=0;i<transmitor.getItems().length;i++){
 			var goodOffer = null;
 			offers.forEach(function (offer){
@@ -110,6 +122,8 @@ function updateTransmitor(){ //updates the transmitor to see the deals that are 
 					purge(transmitor,i);
 				}
 			}
+	}else{
+		block.getTextPlane().setText(block.getTextPlane().getText()+"No active offers container, put a container two blocks above this transmitor to fix");
 	}
 	checkOffers(goodOffers);
 }
