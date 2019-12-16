@@ -1,4 +1,4 @@
-import scripts.settings as S;
+import scripts.settings;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 #priority 90
@@ -8,7 +8,7 @@ import crafttweaker.oredict.IOreDictEntry;
 function disableItem(item as IItemStack){
   //any operation on a disabled item happends here
   item.addTooltip(format.darkRed("Disabled"));
-  if (!S.showDisabled){
+  if (!settings.showDisabled){
     mods.jei.JEI.removeAndHide(item);
   }
 }
