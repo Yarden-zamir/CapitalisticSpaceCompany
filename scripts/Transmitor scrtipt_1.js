@@ -38,19 +38,19 @@ function initData(){
 	block.setModel("minecraft:wool");
 	block.getTextPlane().setScale(0.5);
 	companies = [ //All the different companies in the game [https://minecraft.gamepedia.com/Formatting_codes]
-		{companyName:"§6Zero-G toiletries",itemIcon:ITM("contenttweaker:comp_1")},
-		{companyName:"§8STAR-matter",itemIcon:ITM("contenttweaker:comp_2")}
+		{companyName:"§6Zero-G toiletries",itemIcon:getItem("contenttweaker:comp_1")},
+		{companyName:"§8STAR-matter",itemIcon:getItem("contenttweaker:comp_2")}
 	];
 	offers = [   //All the deals to start with
-		{company:companies[0],buy:ITM("minecraft:log"),sell:ITM("minecraft:glowstone_dust"),buyAmount:60,sellAmount:290,type:dealType.INF},
-		{company:companies[0],buy:ITM("minecraft:log"),sell:ITM("minecraft:paper"),buyAmount:200,sellAmount:200,type:dealType.INF},
-		{company:companies[1],buy:ITM("minecraft:sand"),sell:ITM("minecraft:paper"),buyAmount:600,sellAmount:200,type:dealType.INF}
+		{company:companies[0],buy:getItem("minecraft:log"),sell:getItem("minecraft:glowstone_dust"),buyAmount:60,sellAmount:290,type:dealType.INF},
+		{company:companies[0],buy:getItem("minecraft:log"),sell:getItem("minecraft:paper"),buyAmount:200,sellAmount:200,type:dealType.INF},
+		{company:companies[1],buy:getItem("minecraft:sand"),sell:getItem("minecraft:paper"),buyAmount:600,sellAmount:200,type:dealType.INF}
 	];
 }
 function interact(e){ //when the player interacts
 	block.getTextPlane().setRotationY(block.getTextPlane().getRotationY()+90);
 }
-function ITM(strName){ //move to util class or something
+function getItem(strName){ //move to util class or something
 	return world.createItem(strName, 0, 1);
 }
 function timer(e){
@@ -66,9 +66,9 @@ function checkTick(){
 	updateTransmitor();
 }
 function updateInbox(){
-	var b = world.getBlock(block.getX(),block.getY()+1,block.getZ());
-	if (b.isContainer()){
-			inbox = b.getContainer();
+	var inboxBlock = world.getBlock(block.getX(),block.getY()+1,block.getZ());
+	if (inboxBlock.isContainer()){
+			inbox = inboxBlock.getContainer();
 
 		for (var i=0;i<inbox.getItems().length;i++){ //clear inventory of inbox
 			inbox.setSlot(i,null);
@@ -76,23 +76,25 @@ function updateInbox(){
 		}
 		offers.forEach(function (offer,index){ //loop through offers
 			var itemOffer = offer.company.itemIcon.copy();
-			itemOffer.setCustomName(formatOffer(offer));
-			itemOffer.setLore([offer.company.companyName]);
+			itemOffer.setCustomName(formatOfferName(offer));
+			itemOffer.setLore(formatOfferLore(offer));
 			inbox.setSlot(index,itemOffer);
 		});
+	}else{
+
 	}
 }
 function updateTransmitor(){ //updates the transmitor to see the deals that are now active
-	var b = world.getBlock(block.getX(),block.getY()+2,block.getZ());
+	var transmitorBlock = world.getBlock(block.getX(),block.getY()+2,block.getZ());
 	var goodOffers =[];
-	if (b.isContainer()){
-		transmitor = b.getContainer();
+	if (transmitorBlock.isContainer()){
+		transmitor = transmitorBlock.getContainer();
 		block.getTextPlane().setText("");//reset panel
 		for (var i=0;i<transmitor.getItems().length;i++){
 			var goodOffer = null;
 			offers.forEach(function (offer){
 				if (goodOffer==null){
-					if (transmitor.getSlot(i).getDisplayName()==formatOffer(offer)){
+					if (transmitor.getSlot(i).getDisplayName()==formatOfferName(offer)){
 						goodOffer=offer;
 					}}
 				});
@@ -141,9 +143,9 @@ function checkOffers(offers){
 		world.getBlock(block.getX(),block.getY(),block.getZ()-1),
 	]
 	var inputContainers = [];
-	inputBlocks.forEach(function (b){
-		if (b.isContainer()){
-			inputContainers.push(b.getContainer());
+	inputBlocks.forEach(function (inputBlock){
+		if (inputBlock.isContainer()){
+			inputContainers.push(inputBlock.getContainer());
 		}
 	});
 	inputContainers.forEach(function (container){
@@ -167,8 +169,15 @@ function purge(container,slot){
 	container.setSlot(slot,null);
 	//todo dump items on ground
 }
-function formatOffer(offer){
-	return ("§rselling "+offer.sellAmount+" §2"+offer.sell.getDisplayName()+"§r in exchange for "+offer.buyAmount+" §4"+offer.buy.getDisplayName());
+function formatOfferName(offer){ //change name to formatOfferName
+	return ("§l"+offer.company.companyName+" Trade Offer");
+}
+function formatOfferLore(offer){
+//return ("§rselling "+offer.sellAmount+" §2"+offer.sell.getDisplayName()+"§r in exchange for "+offer.buyAmount+" §4"+offer.buy.getDisplayName());
+	return[
+		"§rSelling "+offer.sellAmount+" §lX §6"+offer.sell.getDisplayName(),
+		"§rBuying "+offer.buyAmount+" §lX §9"+offer.buy.getDisplayName()
+	];
 }
 function arrContains(arr, item){
 	var r = false;
