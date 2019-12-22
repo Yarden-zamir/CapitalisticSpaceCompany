@@ -1,0 +1,111 @@
+{
+    "registryname": "modular_rolling_machine",
+    "localizedname": "Rolling Machine",
+    "requires-blueprint": false,
+    "color": "434040",
+    "parts": [
+        {
+            "x": -1,"y": 0,"z": 0,
+            "elements": [
+                "modularmachinery:blockcasing@0",
+                "casings_item"
+            ]
+        },
+        {
+            "x": -1,"y": 0,"z": 1,
+            "elements": [
+                "modularmachinery:blockcasing@0",
+                "casings_item"
+            ]
+        },
+        {
+            "x": 1,"y": 0,"z": 0,
+            "elements": [
+                "modularmachinery:blockcasing@0",
+                "casings_item"
+            ]
+        },
+        {
+            "x": -1,"y": 0,"z": 2,
+            "elements": [
+                "modularmachinery:blockcasing@0",
+                "casings_item"
+            ]
+        },
+        {
+            "x": 1,"y": 0,"z": 1,
+            "elements": [
+                "modularmachinery:blockcasing@0",
+                "casings_item"
+            ]
+        },
+        {
+            "x": 0,"y": 0,"z": 2,
+            "elements": [
+                "modularmachinery:blockcasing@0",
+                "casings_item"
+            ]
+        },
+        {
+            "x": 1,"y": 0,"z": 2,
+            "elements": [
+                "modularmachinery:blockcasing@0",
+                "casings_item"
+            ]
+        },
+        {
+            "x": 0,"y": 0,"z": 1,
+            "elements": [
+                "minecraft:piston@1"
+            ]
+        },
+        {
+            "x": 1,"y": 1,"z": 2,
+            "elements": [
+                "modularmachinery:blockcasing@3"
+            ]
+        },
+        {
+            "x": -1,"y": 1,"z": 0,
+            "elements": [
+                "modularmachinery:blockcasing@3"
+            ]
+        },
+        {
+            "x": -1,"y": 1,"z": 2,
+            "elements": [
+                "modularmachinery:blockcasing@3"
+            ]
+        },
+        {
+            "x": 1,"y": 1,"z": 0,
+            "elements": [
+                "modularmachinery:blockcasing@3"
+            ]
+        },
+        {
+            "x": -1,"y": 1,"z": 1,
+            "elements": [
+                "minecraft:piston@5"
+            ]
+        },
+        {
+            "x": 0,"y": 1,"z": 0,
+            "elements": [
+                "minecraft:piston@3"
+            ]
+        },
+        {
+            "x": 0,"y": 1,"z": 2,
+            "elements": [
+                "minecraft:piston@2"
+            ]
+        },
+        {
+            "x": 1,"y": 1,"z": 1,
+            "elements": [
+                "minecraft:piston@4"
+            ]
+        }
+    ]
+}

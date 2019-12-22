@@ -24,7 +24,8 @@ lib.disableItems([
 ]);
 
 lib.disableItems([
-  <industrialrenewal:barrel_item>
+  <industrialrenewal:barrel_item>,
+  <industrialrenewal:conveyor_bulk>
 ]);
 lib.disableItems([
   <cgm:workbench>
