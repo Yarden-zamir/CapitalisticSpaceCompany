@@ -2,10 +2,17 @@ import scripts.settings;
 import scripts.lib;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
-
+#priority 80
 lib.disableItems([
 ]);
 
+
+lib.disableItems([
+  <modularmachinery:blockcasing>,
+]);
+lib.disableItems([
+  <magneticraft:fabricator>
+]);
 lib.disableItems([
   <factorytech:compacthopper>,
   <factorytech:stackmover>,
@@ -19,8 +26,7 @@ lib.disableItems([
   <factorytech:realelevator>,
   <factorytech:pulser>,
   <factorytech:pulsecounter>,
-  <factorytech:scaffold>,
-
+  <factorytech:scaffold>
 ]);
 
 lib.disableItems([
