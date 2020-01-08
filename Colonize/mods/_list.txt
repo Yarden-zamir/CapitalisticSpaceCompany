@@ -26,7 +26,7 @@ foamfix-0.10.9-1.12.2.jar
 Forgelin-1.8.4.jar
 ForgeMultipart-1.12.2-2.6.2.83-universal.jar
 FTBBackups-1.1.0.1.jar
-guns-0.15.2-1.12.2.jar
+guns-0.15.3-1.12.2.jar
 ImmersiveEngineering-0.12-92.jar
 immersivepetroleum-1.12.2-1.1.9.jar
 IndustrialRenewal_1.12.2-0.13.1.jar
@@ -65,6 +65,7 @@ rftoolspower-1.12-1.2.0.jar
 sonarcore-1.12.2-5.0.19-20.jar
 Surge-1.12.2-2.0.77.jar
 TConstruct-1.12.2-2.12.0.157.jar
+techguns-1.12.2-2.0.2.0_pre3.1.jar
 theoneprobe-1.12-1.4.28.jar
 TinkersComplement-1.12.2-0.4.3.jar
 Translocators-1.12.2-2.5.2.81-universal.jar
