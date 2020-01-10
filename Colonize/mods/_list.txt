@@ -22,12 +22,11 @@ CustomNPCs_1.12.2-(01Oct19).jar
 diethopper-1.1.jar
 effortlessbuilding-1.12.2-2.16.jar
 essentials-1.12.2-1.2.1.jar
-FactoryTech-1.6.8d.jar
-foamfix-0.10.9-1.12.2.jar
+FactoryTech-1.6.8f.jar
+foamfix-0.10.10-1.12.2.jar
 Forgelin-1.8.4.jar
 ForgeMultipart-1.12.2-2.6.2.83-universal.jar
 FTBBackups-1.1.0.1.jar
-guns-0.15.3-1.12.2.jar
 ImmersiveEngineering-0.12-92.jar
 immersivepetroleum-1.12.2-1.1.9.jar
 IndustrialRenewal_1.12.2-0.13.1.jar
