@@ -26,6 +26,7 @@ hs_err_pid*
 Colonize/mods/OpenTerrainGenerator/
 Colonize/mods/memory_repo/
 Colonize/logs/
+Colonize/local/
 Colonize/saves/
 Colonize/crafttweaker_dump/
 Colonize/screenshots/
@@ -41,3 +42,4 @@ Colonize/config/jei/worldSettings.cfg
 Colonize/config/splash.properties
 Colonize/usercache.json
 Colonize/usernamecache.json
+Colonize/config/jei/worldSettings.cfg
