@@ -34,5 +34,4 @@ lib.disableItems([
   <industrialrenewal:conveyor_bulk>
 ]);
 lib.disableItems([
-  <cgm:workbench>
 ]);
