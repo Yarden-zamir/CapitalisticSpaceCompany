@@ -9,7 +9,7 @@
         "modularmachinery:blockfluidoutputhatch"
     ],
     "casings_decorative": [
-        "modularmachinery:blockcasing"
+        "modularmachinery:blockcasing@0"
     ],
     "casings_fluid": [
         "modularmachinery:blockfluidinputhatch",
@@ -20,7 +20,9 @@
         "modularmachinery:blockenergyoutputhatch"
     ],
     "casings_item": [
-        "modularmachinery:blockinputbus",
-        "modularmachinery:blockoutputbus"
+        "modularmachinery:blockinputbus@0",
+        "modularmachinery:blockinputbus@3",
+        "modularmachinery:blockoutputbus@0",
+        "modularmachinery:blockoutputbus@3"
     ]
 }

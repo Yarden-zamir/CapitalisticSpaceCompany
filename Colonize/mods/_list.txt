@@ -1,6 +1,5 @@
 Alfinivia-0.4hotfix.jar
 AppleSkin-mc1.12-1.0.9.jar
-appliedenergistics2-rv6-stable-7.jar
 AutoRegLib-1.3-32.jar
 base-1.12.2-3.13.0.jar
 BiblioCraft[v2.4.5][MC1.12.2].jar
@@ -35,7 +34,6 @@ InventoryTweaks-1.63.jar
 inworldcrafting-1.12.2-0.13.0-universal.jar
 IvToolkit-1.3.3-1.12.jar
 jei_1.12.2-4.15.0.291.jar
-JustEnoughEnergistics-1.12.2-1.0.8.jar
 Magneticraft_1.12-2.8.2-dev.jar
 Mantle-1.12-1.3.3.55.jar
 mcjtylib-1.12-3.5.4.jar
