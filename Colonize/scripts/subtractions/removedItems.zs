@@ -33,5 +33,8 @@ lib.disableItems([
   <industrialrenewal:barrel_item>,
   <industrialrenewal:conveyor_bulk>
 ]);
+
+Blueprint.removeRecipe(<immersiveengineering:bullet:2>.withTag({bullet: "silver"}));
 lib.disableItems([
+  <immersiveengineering:bullet:2>.withTag({bullet: "silver"})
 ]);
