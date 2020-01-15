@@ -24,18 +24,9 @@ function disableItems(items as IItemStack[]){
   }
 }
 
-function applyOreDict(item as IItemStack, oreD as IOreDictEntry, add as bool){
-  if (add){ //adding to the oredict
-    oreD.add(item);
-  }else{//removing from the
-    oreD.remove(item);
-  }
+function addOreDict(items as IItemStack[], oreDict as IOreDictEntry){
+  oreD.add(items);
 }
-
-function applyOreDictArray(items as IItemStack[], oreD as IOreDictEntry, add as bool){
-  if (add){ //adding to the oredict
-    oreD.addItems(items);
-  }else{//removing from the oredict
-    oreD.removeItems(items);
-  }
+function removeOreDict(items as IItemStack[], oreDict as IOreDictEntry){
+  oreD.remove(items);
 }
