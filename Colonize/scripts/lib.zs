@@ -25,8 +25,8 @@ function disableItems(items as IItemStack[]){
 }
 
 function addOreDict(items as IItemStack[], oreDict as IOreDictEntry){
-  oreD.add(items);
+  oreDict.add(items);
 }
 function removeOreDict(items as IItemStack[], oreDict as IOreDictEntry){
-  oreD.remove(items);
+  oreDict.remove(items);
 }
