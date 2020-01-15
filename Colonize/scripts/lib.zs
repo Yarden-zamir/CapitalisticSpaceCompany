@@ -23,3 +23,19 @@ function disableItems(items as IItemStack[]){
     disableItem(item);
   }
 }
+
+function applyOreDict(item as IItemStack, oreD as IOreDictEntry, add as bool){
+  if (add){ //adding to the oredict
+    oreD.add(item);
+  }else{//removing from the
+    oreD.remove(item);
+  }
+}
+
+function applyOreDictArray(items as IItemStack[], oreD as IOreDictEntry, add as bool){
+  if (add){ //adding to the oredict
+    oreD.addItems(items);
+  }else{//removing from the oredict
+    oreD.removeItems(items);
+  }
+}
