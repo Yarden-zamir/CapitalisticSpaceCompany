@@ -8,5 +8,8 @@ import mods.immersiveengineering.Blueprint;
 
 
 
-
+//immersiveengineering
 Blueprint.removeRecipe(<immersiveengineering:bullet:2>.withTag({bullet: "armor_piercing"}));
+
+//vanilla
+recipes.remove(<minecraft:fire_charge>, false);
