@@ -7,3 +7,11 @@ recipes.addShapeless(<modularmachinery:blockcasing>, [<ore:ingotCopper>,<minecra
 
 //3x3
 recipes.addShapeless(<minecraft:fire_charge>, [<ore:dustBlaze> | <ore:dustRedstone> *4 ,<ore:gunpowder>,<ore:coal> | <ore:charcoal>]);
+recipes.addShapeless(<minecraft:fire_charge>, [<ore:dustRedstone> *4 ,<ore:gunpowder>,<ore:coal> | <ore:charcoal>]);
+
+//
+recipes.addShaped(<railcraft:tie:1>, [[null, <minecraft:water_bucket> | <openblocks:tank>.withTag({tank: {FluidName: "water", Amount: 16000}}), null], [<railcraft:concrete:*>, <ore:stickSteel>, <railcraft:concrete:*>]]);
+recipes.addShaped(<railcraft:frame> * 6, [[<ore:plateIron>, <ore:plateIron>, <ore:plateIron>], [<ore:stickSteel>, null, <ore:stickSteel>], [<ore:stickSteel>, <ore:stickSteel>, <ore:stickSteel>]]);
+recipes.addShaped(<railcraft:frame> * 6, [[<ore:plateBronze>, <ore:plateBronze>, <ore:plateBronze>], [<ore:stickSteel>, null, <ore:stickSteel>], [<ore:stickSteel>, <ore:stickSteel>, <ore:stickSteel>]]);
+recipes.addShaped(<railcraft:frame> * 6, [[<ore:plateBrass>, <ore:plateBrass>, <ore:plateBrass>], [<ore:stickSteel>, null, <ore:stickSteel>], [<ore:stickSteel>, <ore:stickSteel>, <ore:stickSteel>]]);
+recipes.addShaped(<railcraft:frame> * 10, [[<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>], [<ore:stickSteel>, null, <ore:stickSteel>], [<ore:stickSteel>, <ore:stickSteel>, <ore:stickSteel>]]);

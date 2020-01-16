@@ -10,4 +10,4 @@ Casting.addTableRecipe(<immersiveengineering:mold:3>, <immersiveengineering:bull
 Casting.addTableRecipe(<immersiveengineering:mold:4>, <ore:wire>, <liquid:steel>, 288, true);
 Casting.addTableRecipe(<immersiveengineering:mold:5>, <minecraft:iron_trapdoor>|<ore:trapdoorWood>, <liquid:steel>, 288, true);
 Casting.addTableRecipe(<immersiveengineering:mold:6>, <ore:workbench>, <liquid:steel>, 288, true);
-Casting.addTableRecipe(<immersiveengineering:mold:6>, <quark:grate>, <liquid:steel>, 288, true);
+Casting.addTableRecipe(<immersiveengineering:mold:7>, <quark:grate>, <liquid:steel>, 288, true);

@@ -50,7 +50,19 @@ lib.disableItems([
 ]);
 lib.disableItems([
   <magneticraft:fabricator>,
-  <magneticraft:iron_pipe> 
+  <magneticraft:iron_pipe>,
+  <magneticraft:ingots:2>,
+  <magneticraft:ingots:3>,
+  <magneticraft:ingots:4>,
+  <magneticraft:ingots:5>,
+  <magneticraft:ingots:6>,
+  <magneticraft:ingots:7>,
+  <magneticraft:ingots:8>,
+  <magneticraft:ingots:9>,
+  <magneticraft:ingots:10>,
+  <magneticraft:ingots:11>,
+  <magneticraft:ingots:12>,
+  <magneticraft:ingots:14>
 ]);
 lib.disableItems([
   <factorytech:compacthopper>,
