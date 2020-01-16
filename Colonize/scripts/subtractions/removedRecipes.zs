@@ -3,9 +3,10 @@ import scripts.lib;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.immersiveengineering.Blueprint;
-#priority 80
+#priority 10
 //recipes to remove, usually when you want to change the recipe
 
+//maybe should move into seperate files?
 
 
 //immersiveengineering
@@ -24,3 +25,6 @@ Blueprint.removeRecipe(<immersiveengineering:graphite_electrode>);
 
 //vanilla
 recipes.remove(<minecraft:fire_charge>, false);
+
+//furnace
+//furnace.remove(<factorytech:ingot>);
