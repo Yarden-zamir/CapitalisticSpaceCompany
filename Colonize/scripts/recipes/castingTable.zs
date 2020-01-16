@@ -5,7 +5,7 @@ import mods.tconstruct.Casting;
 
 Casting.addTableRecipe(<immersiveengineering:mold>, <ore:plate>, <liquid:steel>, 288, true);
 Casting.addTableRecipe(<immersiveengineering:mold:1>, <ore:gear>, <liquid:steel>, 288, true);
-Casting.addTableRecipe(<immersiveengineering:mold:2>, <ore:stickWood>|<ore:partToolRod>|<ore:stickSteel>|<ore:stickIron>|<ore:sticTreatedkWood>, <liquid:steel>, 288, true);
+Casting.addTableRecipe(<immersiveengineering:mold:2>, <ore:stickWood>|<ore:partToolRod>|<ore:stickSteel>|<ore:stickIron>|<ore:sticTreatedkWood>, <liquid:steel>, 288, true); //consider adding a stick ordict
 Casting.addTableRecipe(<immersiveengineering:mold:3>, <immersiveengineering:bullet>, <liquid:steel>, 288, true);
 Casting.addTableRecipe(<immersiveengineering:mold:4>, <ore:wire>, <liquid:steel>, 288, true);
 Casting.addTableRecipe(<immersiveengineering:mold:5>, <minecraft:iron_trapdoor>|<ore:trapdoorWood>, <liquid:steel>, 288, true);
