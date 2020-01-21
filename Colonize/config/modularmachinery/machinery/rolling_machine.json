@@ -62,25 +62,25 @@
         {
             "x": 1,"y": 1,"z": 2,
             "elements": [
-                "modularmachinery:blockcasing@0@3"
+                "modularmachinery:blockcasing@3"
             ]
         },
         {
             "x": -1,"y": 1,"z": 0,
             "elements": [
-                "modularmachinery:blockcasing@0@3"
+                "modularmachinery:blockcasing@3"
             ]
         },
         {
             "x": -1,"y": 1,"z": 2,
             "elements": [
-                "modularmachinery:blockcasing@0@3"
+                "modularmachinery:blockcasing@3"
             ]
         },
         {
             "x": 1,"y": 1,"z": 0,
             "elements": [
-                "modularmachinery:blockcasing@0@3"
+                "modularmachinery:blockcasing@3"
             ]
         },
         {

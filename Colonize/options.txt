@@ -4,7 +4,7 @@ mouseSensitivity:0.5
 fov:0.475
 gamma:1.0
 saturation:0.0
-renderDistance:13
+renderDistance:10
 guiScale:2
 particles:1
 bobView:true
@@ -85,7 +85,8 @@ key_key.hotbar.6:7
 key_key.hotbar.7:8
 key_key.hotbar.8:9
 key_key.hotbar.9:10
-key_quark.keybind.lockBuilding:37
+key_quark.keybind.dropoff:0
+key_quark.keybind.changeHotbar:44
 key_quark.emote.no:0
 key_quark.emote.yes:0
 key_quark.emote.wave:0
@@ -104,8 +105,7 @@ key_quark.emote.dab:0
 key_quark.emote.jet:0
 key_quark.emote.exorcist:0
 key_quark.emote.zombie:0
-key_quark.keybind.dropoff:0
-key_quark.keybind.changeHotbar:44
+key_quark.keybind.lockBuilding:37
 key_Scene1 start/pause:79
 key_Scene2 start/pause:80
 key_Scene3 start/pause:81
@@ -123,7 +123,6 @@ key_pneumaticcraft.chestplate.launcher:46:CONTROL
 key_key.toggleFoVChanges:51:SHIFT
 key_key.reloadSoundSystem:66:SHIFT
 key_key.toggleTimeOfDayOverlay:0
-key_Test:43
 key_key.dismount:42
 key_key.narrator:48:CONTROL
 key_key.jei.toggleOverlay:24:CONTROL
