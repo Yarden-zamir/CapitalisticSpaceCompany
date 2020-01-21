@@ -9,15 +9,15 @@ import mods.immersiveengineering.Excavator;
 //
 static typicalProcessingTime as int = 10;
 //
-function addOreByMineral(inputMineral as String){ //TODO compleate this, would be cool
+function addOreByMineral(inputMineral as string){ //TODO compleate this, would be cool
   var mineral = Excavator.getMineral(inputMineral);
 
 }
-function addOre(ore as IItemStack, inputMineral as String){ //even more simple version
+function addOre(ore as IItemStack, inputMineral as string){ //even more simple version
   addOreWithTime(ore, inputMineral, typicalProcessingTime);
 }
-function addOreWithTime(ore as IItemStack, inputMineral as String,time as int){ // simple version
-  addOreAdv([<minecraft:dirt>%1,<factorytech:mined_ore>%0.2,ore%0.6], [ore%0.2,<minecraft:coal>%0.025], inputMineral, time);
+function addOreWithTime(ore as IItemStack, inputMineral as string,time as int){ // simple version
+  addOreAdv([<minecraft:dirt>.weight(1),<factorytech:mined_ore>.weight(0.2),ore.weight(0.6)], [ore.weight(0.2),<minecraft:coal>.weight(0.025)], inputMineral, time);
 }
 function addOreAdv(outputItems as WeightedItemStack[], inputItems as WeightedItemStack[], inputMineral as string, time as int){
   var machineRegName = "modular_crude_mineral_drill";
@@ -26,7 +26,7 @@ function addOreAdv(outputItems as WeightedItemStack[], inputItems as WeightedIte
   );
 
   //mineral
-  r.addMineralInput(inputMineral,1);
+  r.addMineralOutput(inputMineral,1);
   //adding inputs
   for input in inputItems{
     r.addItemInput(input.stack);
