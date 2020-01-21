@@ -77,7 +77,9 @@ lib.disableItems([
   <factorytech:realelevator>,
   <factorytech:pulser>,
   <factorytech:pulsecounter>,
-  <factorytech:scaffold>
+  <factorytech:scaffold>,
+  <factorytech:ingot>,
+  <factorytech:salvage:*>
 ]);
 
 lib.disableItems([
