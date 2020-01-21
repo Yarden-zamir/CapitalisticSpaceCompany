@@ -4,14 +4,14 @@ import crafttweaker.item.IItemStack;
 
 static showDisabled as bool = false;
 
-
+//change to a dynamic loader system
 static ingotsUnified as IItemStack[IOreDictEntry] =
 {
   <ore:ingotSilver>: <thermalfoundation:material:130>,
   <ore:ingotLead>: <thermalfoundation:material:131>,
   <ore:ingotBronze>: <thermalfoundation:material:163>,
   <ore:ingotTin>: <thermalfoundation:material:129>,
-  <ore:ingotCopper>: <thermalfoundation:material:128>,
+  <ore:ingotCopper>: <immersiveengineering:metal>,
   <ore:ingotAluminum>: <thermalfoundation:material:132>,
   <ore:ingotNickel>: <thermalfoundation:material:133>,
   <ore:ingotPlatinum>: <thermalfoundation:material:134>,
