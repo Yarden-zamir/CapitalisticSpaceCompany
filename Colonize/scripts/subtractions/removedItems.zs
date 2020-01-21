@@ -12,12 +12,10 @@ lib.disableItems([
 
 lib.disableItems([
   <modularmachinery:blockcasing:4>,
-  <modularmachinery:blockinputbus:1>,
   <modularmachinery:blockinputbus:2>,
   <modularmachinery:blockinputbus:4>,
   <modularmachinery:blockinputbus:5>,
   <modularmachinery:blockinputbus:6>,
-  <modularmachinery:blockoutputbus:1>,
   <modularmachinery:blockoutputbus:2>,
   <modularmachinery:blockoutputbus:4>,
   <modularmachinery:blockoutputbus:5>,
@@ -79,7 +77,14 @@ lib.disableItems([
   <factorytech:pulsecounter>,
   <factorytech:scaffold>,
   <factorytech:ingot>,
-  <factorytech:salvage:*>
+  <factorytech:salvage:*>,
+  <factorytech:pipe>,
+  <factorytech:valve>,
+  <factorytech:itemredis>,
+  <factorytech:tankblock>,
+  <factorytech:ore:*>,
+  <essentials:fertile_soil:*>,
+  <factorytech:wrench>, //wrenches from other mods (base, pneumaticcraft) work as well
 ]);
 
 lib.disableItems([

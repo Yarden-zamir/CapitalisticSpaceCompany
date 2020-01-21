@@ -3,6 +3,7 @@ import scripts.lib;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.immersiveengineering.Blueprint;
+import mods.factorytech.rivergrate;
 #priority 10
 //recipes to remove, usually when you want to change the recipe
 
@@ -28,3 +29,8 @@ recipes.remove(<minecraft:fire_charge>, false);
 
 //furnace
 //furnace.remove(<factorytech:ingot>);
+
+//factorytech
+rivergrate.removeRecipe(<factorytech:ore_dust:17>);
+rivergrate.removeRecipe(<factorytech:ore_dust:16>);
+rivergrate.removeRecipe(<factorytech:ore_dust:15>);
