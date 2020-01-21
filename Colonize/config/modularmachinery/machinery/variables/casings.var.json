@@ -21,8 +21,10 @@
     ],
     "casings_item": [
         "modularmachinery:blockinputbus@0",
-        "modularmachinery:blockinputbus@3",
         "modularmachinery:blockoutputbus@0",
+        "modularmachinery:blockinputbus@1",
+        "modularmachinery:blockoutputbus@1",
+        "modularmachinery:blockinputbus@3",
         "modularmachinery:blockoutputbus@3"
     ]
 }

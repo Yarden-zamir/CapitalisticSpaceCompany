@@ -31,7 +31,7 @@ ForgeMultipart-1.12.2-2.6.2.83-universal.jar
 FTBBackups-1.1.0.1.jar
 ImmersiveEngineering-0.12-92.jar
 immersivepetroleum-1.12.2-1.1.9.jar
-IndustrialRenewal_1.12.2-0.13.1.jar
+IndustrialRenewal_1.12.2-0.14.3.jar
 Inspirations-1.12.2-0.2.9.jar
 InventoryTweaks-1.63.jar
 inworldcrafting-1.12.2-0.13.0-universal.jar
@@ -44,8 +44,9 @@ MCMultiPart-2.5.3.jar
 modelloader-1.1.7.jar
 modnametooltip_1.12.2-1.10.1.jar
 modtweaker-4.0.17.jar
+Modular Diversity-1.9.jar
 modular-routers-1.12.2-3.2.2.jar
-modularmachinery-1.12.2-1.11.1.jar
+modularmachinery-1.12.2-1.10.0.jar
 MouseTweaks-2.10-mc1.12.2.jar
 MTLib-3.0.6.jar
 obfuscate-0.2.6-1.12.2.jar
@@ -64,7 +65,7 @@ RandomThings-MC1.12.2-4.2.7.3.jar
 randomtweaks-1.12.2-2.7.1.0.jar
 RecurrentComplex-1.4.8.2.jar
 RedstoneFlux-1.12-2.1.0.6-universal.jar
-rftools-1.12-7.72.jar
+rftools-1.12-7.73.jar
 rftoolsctrl-1.12-2.0.2.jar
 sonarcore-1.12.2-5.0.19-20.jar
 Surge-1.12.2-2.0.77.jar
