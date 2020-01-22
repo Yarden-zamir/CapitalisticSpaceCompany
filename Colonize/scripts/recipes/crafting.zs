@@ -15,3 +15,4 @@ recipes.addShaped(<railcraft:frame> * 6, [[<ore:plateIron>, <ore:plateIron>, <or
 recipes.addShaped(<railcraft:frame> * 6, [[<ore:plateBronze>, <ore:plateBronze>, <ore:plateBronze>], [<ore:stickSteel>, null, <ore:stickSteel>], [<ore:stickSteel>, <ore:stickSteel>, <ore:stickSteel>]]);
 recipes.addShaped(<railcraft:frame> * 6, [[<ore:plateBrass>, <ore:plateBrass>, <ore:plateBrass>], [<ore:stickSteel>, null, <ore:stickSteel>], [<ore:stickSteel>, <ore:stickSteel>, <ore:stickSteel>]]);
 recipes.addShaped(<railcraft:frame> * 10, [[<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>], [<ore:stickSteel>, null, <ore:stickSteel>], [<ore:stickSteel>, <ore:stickSteel>, <ore:stickSteel>]]);
+recipes.addShaped(<immersiveengineering:metal_device1:7>, [[<ore:scaffoldingSteel>, <ore:fenceSteel>, <ore:scaffoldingSteel>],[<ore:scaffoldingSteel>, <ore:fenceSteel>, <ore:scaffoldingSteel>], [<ore:scaffoldingSteel>, <immersiveengineering:metal_decoration0:4>, <ore:scaffoldingSteel>]]);
