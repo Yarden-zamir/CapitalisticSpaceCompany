@@ -144,15 +144,7 @@
             "y": 1,
             "z": 1,
             "elements": [
-                "magneticraft:inserter@1"
-            ]
-        },
-        {
-            "x": 0,
-            "y": -1,
-            "z": 2,
-            "elements": [
-                "factorytech:blockbreaker@0"
+                "magneticraft:inserter"
             ]
         }
     ]

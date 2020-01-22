@@ -8,6 +8,8 @@ import mods.immersiveengineering.Excavator;
 
 //
 static typicalProcessingTime as int = 10;
+static outputEfficiency = 0.8; //this means that four in five will generate
+static inputEfficiency = 0.2;  //this means that one in five will be consumed
 //
 function addOreByMineral(inputMineral as string){ //TODO compleate this, would be cool
   var mineral = Excavator.getMineral(inputMineral);
@@ -17,7 +19,7 @@ function addOre(ore as IItemStack, inputMineral as string){ //even more simple v
   addOreWithTime(ore, inputMineral, typicalProcessingTime);
 }
 function addOreWithTime(ore as IItemStack, inputMineral as string,time as int){ // simple version
-  addOreAdv([<minecraft:dirt>.weight(1),<factorytech:mined_ore>.weight(0.2),ore.weight(0.6)], [ore.weight(0.2),<minecraft:coal>.weight(0.025)], inputMineral, time);
+  addOreAdv([<minecraft:dirt>.weight(1),<factorytech:mined_ore>.weight(0.2),ore.weight(0.8)], [ore.weight(0.2),<minecraft:coal>.weight(0.025)], inputMineral, time);
 }
 function addOreAdv(outputItems as WeightedItemStack[], inputItems as WeightedItemStack[], inputMineral as string, time as int){
   var machineRegName = "modular_crude_mineral_drill";
