@@ -16,7 +16,7 @@ function addOre(outputItems as WeightedItemStack[], inputItems as WeightedItemSt
   if (RF>0){
     r.addEnergyPerTickInput(RF);
   }
-  r.addMineralInput(inputMineral,1);
+  r.addMineralInput(inputMineral,-1);
   r.addOreRequirement(min,max);
   for input in inputItems{
     r.addItemInput(input.stack);

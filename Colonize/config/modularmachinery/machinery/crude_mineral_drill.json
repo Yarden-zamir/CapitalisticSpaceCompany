@@ -8,7 +8,9 @@
             "y": [0,-1,-2],
             "z": 0,
             "elements": [
-                "casings_item"
+                "casings_item",
+                "railcraft:equipment@3",
+                "modularmachinery:blockcasing@0"
             ]
         },
         {
@@ -16,7 +18,9 @@
             "y": [0,-1,-2],
             "z": 0,
             "elements": [
-                "casings_item"
+                "casings_item",
+                "railcraft:equipment@3",
+                "modularmachinery:blockcasing@0"
             ]
         },
         {
