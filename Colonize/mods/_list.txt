@@ -21,6 +21,7 @@ CraftTweaker2-1.12-4.1.20.jar
 crafttweakerutils-0.5a.jar
 CTM-MC1.12.2-1.0.1.30.jar
 CustomNPCs_1.12.2-(01Oct19).jar
+DefaultOptions_1.12.2-9.2.8.jar
 diethopper-1.1.jar
 effortlessbuilding-1.12.2-2.16.jar
 essentials-1.12.2-1.2.1.jar
@@ -75,7 +76,8 @@ theoneprobe-1.12-1.4.28.jar
 ThermalFoundation-1.12.2-2.6.3.27-universal.jar
 TinkersComplement-1.12.2-0.4.3.jar
 TinkersExtras-1.12.2-1.1.0.jar
-Translocators-1.12.2-2.5.2.81-universal.jar
+UniDict-1.12.2-2.9.5.jar
 VanillaFix-1.0.10-99.jar
+WanionLib-1.12.2-2.4.jar
 _list.txt
 _modLister.bat
