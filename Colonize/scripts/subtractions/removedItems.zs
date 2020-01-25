@@ -8,8 +8,15 @@ import mods.immersiveengineering.Blueprint;
 #priority 80
 lib.disableItems([
 ]);
+lib.treeDisableItems([
+]);
 
-
+lib.treeDisableItems([
+  <randomthings:ingredient:3>
+]);
+lib.treeDisableItems([
+  // <thermalfoundation:material:163>
+]);
 lib.disableItems([
   <modularmachinery:blockcasing:4>,
   <modularmachinery:blockinputbus:2>,

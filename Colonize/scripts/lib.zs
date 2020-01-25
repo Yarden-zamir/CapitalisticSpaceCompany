@@ -1,6 +1,7 @@
 import scripts.settings;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.item.IIngredient;
 #priority 90
 /*
 * item - the item you want to disable
@@ -23,3 +24,29 @@ function disableItems(items as IItemStack[]){
     disableItem(item);
   }
 }
+
+function treeDisableItem(item as IItemStack){
+  for rec in recipes.all{
+    for i in rec.ingredients1D{
+      if (!isNull(i)){
+        if (i.matches(item)){
+          disableItem(item);
+          print("treeD "+item.name);
+          treeDisableItem(rec.output);
+          print("treeGrd");
+        }
+      }
+    }
+  }
+}
+function treeDisableItems(items as IItemStack[]){
+  for item in items {
+    treeDisableItem(item);
+  }
+}
+
+// function compareStack(a as IIngredient, b as IIngredient) as bool{
+//   var aUniqe = a.name+a.definition.id;
+//   var bUniqe = b.name+b.definition.id;
+//   return (aUniqe==bUniqe);
+// }

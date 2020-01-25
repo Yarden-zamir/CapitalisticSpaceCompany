@@ -11,6 +11,7 @@ import mods.factorytech.rivergrate;
 
 
 //immersiveengineering
+recipes.remove(<immersiveengineering:metal_device1:7>,false);
 Blueprint.removeRecipe(<immersiveengineering:bullet:2>.withTag({bullet: "armor_piercing"}));
 //removing molds from blueprints to clean up blueprints (https://github.com/PandaBoy444/Colonize/issues/36)
 Blueprint.removeRecipe(<immersiveengineering:mold>);
