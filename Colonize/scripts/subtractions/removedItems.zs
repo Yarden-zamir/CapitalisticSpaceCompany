@@ -8,15 +8,16 @@ import mods.immersiveengineering.Blueprint;
 #priority 80
 lib.disableItems([
 ]);
-lib.treeDisableItems([
-]);
-
-lib.treeDisableItems([
-  <randomthings:ingredient:3>
-]);
-lib.treeDisableItems([
-  // <thermalfoundation:material:163>
-]);
+// lib.treeDisableItems([
+// ]);
+//
+// lib.treeDisableItems([
+//   <randomthings:ingredient:3>
+// ]);
+// lib.treeDisableItems([
+//   <thermalfoundation:material:163>,
+//   <thermalfoundation:material:165>
+// ]);
 lib.disableItems([
   <modularmachinery:blockcasing:4>,
   <modularmachinery:blockinputbus:2>,
@@ -104,4 +105,17 @@ lib.disableItems([
 Blueprint.removeRecipe(<immersiveengineering:bullet:2>.withTag({bullet: "silver"}));
 lib.disableItems([
   <immersiveengineering:bullet:2>.withTag({bullet: "silver"})
+  //remove lead
+  ,<immersiveengineering:metal:2>
+  //remove lv
+  ,<immersiveengineering:wirecoil:6>
+  ,<immersiveengineering:wirecoil>
+  ,<immersiveengineering:connector>
+  ,<immersiveengineering:connector:1>
+  //remove capacitors
+  ,<immersiveengineering:metal_device0>
+  ,<immersiveengineering:metal_device0:1>
+  ,<immersiveengineering:metal_device0:2>
+  ,<immersiveengineering:powerpack>
+
 ]);

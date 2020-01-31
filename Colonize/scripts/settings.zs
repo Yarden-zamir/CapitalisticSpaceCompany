@@ -3,7 +3,7 @@ import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.IItemStack;
 
 static showDisabled as bool = false;
-
+static toolTipForDisabled as string= "disabled";
 //change to a dynamic loader system
 static ingotsUnified as IItemStack[IOreDictEntry] =
 {
