@@ -1,0 +1,37 @@
+function removeRecipe(recipe as ICraftingRecipe){
+
+}
+function treeDisableItem2(item as IItemStack){
+  //as long as the item hasn't been removed
+  //go through all recipes
+  //find recipe that has this item as an ingredient
+  //remove recipe
+  //take result of recipe and repeate
+}
+///
+function treeDisableItem(item as IItemStack){
+  if (!isDisabled(item)){//v
+    print("Going to disable "+item.name+" and all of it's kids ");
+    disableItem(item);
+    for rec in recipes.all{
+      for i in rec.ingredients1D{if (!isNull(i)){
+          if (i.matches(item)){ // the recipe rec creates the item, needs to die
+            treeDisableItem(rec.output);
+            print("tree2 "+item.name);
+          }
+        }
+      }
+    }
+  }
+}
+
+function treeDisableItems(items as IItemStack[]){
+  for item in items {
+    treeDisableItem(item);
+  }
+}
+// function compareStack(a as IIngredient, b as IIngredient) as bool{
+//   var aUniqe = a.name+a.definition.id;
+//   var bUniqe = b.name+b.definition.id;
+//   return (aUniqe==bUniqe);
+// }
