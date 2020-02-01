@@ -27,3 +27,6 @@ for ore in gearArr {<ore:gear>.addAll(ore);}
 var wireArr as IOreDictEntry[] = [
   <ore:wireCopper> , <ore:wireElectrum> , <ore:wireAluminum>, <ore:wireSteel>, <ore:wireGold>];
 for ore in wireArr {<ore:wire>.addAll(ore);}
+
+<ore:workbench>.add(<randomthings:customworkbench>);
+<ore:craftingTableWood>.add(<randomthings:customworkbench>);

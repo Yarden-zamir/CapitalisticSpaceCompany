@@ -8,7 +8,7 @@ static disabledItems as IItemStack[]= [];
 
 function disableItem(item as IItemStack){
   //any operation on a disabled item happends here
-  item.withEmptyTag().anyAmount().addTooltip(format.darkRed(settings.toolTipForDisabled));
+  item.settings.toolTipForDisabled);
   disabledItems += item;
   if (!settings.showDisabled){
     mods.jei.JEI.removeAndHide(item);

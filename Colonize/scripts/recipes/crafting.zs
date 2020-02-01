@@ -8,7 +8,7 @@ recipes.replaceAllOccurences(<rftools:machine_base>, <ore:plate>);
 recipes.addShapeless(<modularmachinery:blockcasing>, [<ore:ingotCopper>,<minecraft:redstone>,<ore:ingotIron>,<ore:ingotIron>]);
 
 //3x3
-recipes.addShapeless(<minecraft:fire_charge>, [<ore:dustBlaze> | <ore:dustRedstone> *4 ,<ore:gunpowder>,<ore:coal> | <ore:charcoal>]);
+recipes.addShapeless(<minecraft:fire_charge>, [<ore:dustBlaze> ,<ore:gunpowder>,<ore:coal> | <ore:charcoal>]);
 recipes.addShapeless(<minecraft:fire_charge>, [<ore:dustRedstone> *4 ,<ore:gunpowder>,<ore:coal> | <ore:charcoal>]);
 
 //

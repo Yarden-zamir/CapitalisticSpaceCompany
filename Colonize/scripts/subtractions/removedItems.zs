@@ -8,6 +8,55 @@ import mods.immersiveengineering.Blueprint;
 #priority 80
 lib.disableItems([
 ]);
+
+lib.disableItems([//i'll later seperate
+  <randomthings:ingredient:3>
+  ,<randomthings:spectresword>
+  ,<randomthings:spectrepickaxe>
+  ,<randomthings:spectreaxe>
+  ,<randomthings:spectreshovel>
+  ,<randomthings:spectrekey>
+  ,<randomthings:enderbridge>
+  ,<randomthings:prismarineenderbridge>
+  ,<randomthings:enderanchor>
+  ,<randomthings:spectreblock>
+  ,<pneumaticcraft:omnidirectional_hopper> //maybe
+  ,<randomthings:plate_redirector>
+  ,<randomthings:plate_filteredredirector>
+  ,<randomthings:plate_redstone>
+  ,<randomthings:timeinabottle>.withTag({timeData: {storedTime: 2600}})
+  ,<randomthings:timeinabottle>
+  ,<randomthings:spectreanchor>
+  ,<randomthings:plate_accelerator>
+  ,<randomthings:plate_accelerator_directional>
+  ,<randomthings:plate_bouncy>
+  ,<randomthings:plate_collection>
+  ,<randomthings:diviningrod:*>
+  ,<randomthings:spectrecharger:*>
+  ,<randomthings:spectrecoil_redstone>
+  ,<randomthings:spectrecoil_genesis>
+  ,<randomthings:spectrecoil_normal>
+  ,<randomthings:spectrecoil_ender>
+  ,<randomthings:spectrecoil_number>
+  ,<randomthings:eclipsedclock>
+  ,<randomthings:plate_corrector>
+  ,<randomthings:plate_processing>
+  ,<randomthings:ingredient:10>
+  ,<randomthings:ingredient:2>
+  ,<randomthings:ingredient:1>
+  ,<randomthings:ingredient:8>
+  ,<randomthings:ingredient:9>
+  ,<randomthings:pitcherplant>
+  ,<randomthings:peacecandle>
+  ,<randomthings:spectreenergyinjector>
+  ,<randomthings:spectrelens>
+  ,<randomthings:inventoryrerouter>
+  ,<randomthings:slimecube>
+  ,<randomthings:ingredient:12>
+  ,<randomthings:lotusseeds>
+  ,<randomthings:ingredient:11>
+  ,<randomthings:plate_extraction>
+]);
 // lib.treeDisableItems([
 // ]);
 //

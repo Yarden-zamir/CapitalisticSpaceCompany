@@ -35,3 +35,6 @@ recipes.remove(<minecraft:fire_charge>, false);
 rivergrate.removeRecipe(<factorytech:ore_dust:17>);
 rivergrate.removeRecipe(<factorytech:ore_dust:16>);
 rivergrate.removeRecipe(<factorytech:ore_dust:15>);
+
+recipes.remove(<magneticraft:inserter>,false);
+recipes.remove(<magneticraft:multiblock_parts>,false);
