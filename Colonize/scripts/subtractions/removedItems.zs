@@ -4,11 +4,69 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 
 import mods.immersiveengineering.Blueprint;
-
+//should seperate into different files
 #priority 80
 lib.disableItems([
 ]);
 
+lib.disableItems([
+  <thermalfoundation:ore:*>
+  ,<thermalfoundation:storage:*>
+  ,<thermalfoundation:glass:1>
+  ,<thermalfoundation:glass:2>
+  ,<thermalfoundation:glass:4>
+  ,<thermalfoundation:glass:5> * 2
+  ,<thermalfoundation:glass:6> * 2
+  ,<thermalfoundation:glass:7>
+  ,<thermalfoundation:glass:8>
+  ,<thermalfoundation:glass_alloy:1>
+  ,<thermalfoundation:glass_alloy:2>
+  ,<thermalfoundation:glass_alloy:3>
+  ,<thermalfoundation:glass_alloy:4>
+  ,<thermalfoundation:glass_alloy:5>
+  ,<thermalfoundation:glass_alloy:6>
+  ,<thermalfoundation:glass_alloy:7>
+  ,<thermalfoundation:rockwool:*>
+  ,<thermalfoundation:coin:*>
+  ,<thermalfoundation:upgrade:*>
+  ,<thermalfoundation:security>
+  ,<thermalfoundation:diagram_redprint>
+  ,<thermalfoundation:bait:*>
+  ,<thermalfoundation:dye:*>
+  ,<thermalfoundation:material:354>
+  ,<thermalfoundation:material:802>
+  ,<thermalfoundation:material:1026>
+  ,<thermalfoundation:material:1027>
+  ,<thermalfoundation:material:1028>
+  ,<thermalfoundation:material:2048>
+  ,<thermalfoundation:material:2049>
+  ,<thermalfoundation:material:2050>
+  ,<thermalfoundation:material:2051>
+  ,<thermalfoundation:material:2052>
+  ,<thermalfoundation:material:2053>
+  ,<thermalfoundation:material:99>
+  ,<thermalfoundation:material:163>
+  ,<thermalfoundation:material:227>
+  ,<thermalfoundation:material:291>
+  ,<thermalfoundation:material:355>
+  ,<forge:bucketfilled>.withTag({FluidName: "bronze", Amount: 1000})
+  ,<thermalfoundation:storage_alloy:*>
+  ,<thermalfoundation:material:165>
+  ,<thermalfoundation:material:229>
+  ,<forge:bucketfilled>.withTag({FluidName: "signalum", Amount: 1000})
+  ,<thermalfoundation:material:101>
+  ,<thermalfoundation:material:357>
+  ,<thermalfoundation:material:293>
+  ,<openblocks:tank>.withTag({tank: {FluidName: "signalum", Amount: 16000}})
+  ,<openblocks:tank>.withTag({tank: {FluidName: "bronze", Amount: 16000}})
+]);
+lib.disableItems([
+  <thermaldynamics:duct_16:6>
+  ,<thermaldynamics:duct_16:7>
+  ,<thermaldynamics:retriever:3>
+  ,<thermaldynamics:filter:3>
+  ,<thermaldynamics:servo:3>
+]);
 lib.disableItems([//i'll later seperate
   <randomthings:ingredient:3>
   ,<randomthings:spectresword>

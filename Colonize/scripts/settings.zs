@@ -1,9 +1,10 @@
 #priority 99
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.IItemStack;
+import crafttweaker.formatting.IFormattedText;
 
 static showDisabled as bool = false;
-static toolTipForDisabled as string= "disabled";
+static toolTipForDisabled as IFormattedText = format.darkRed("disabled");
 //change to a dynamic loader system
 static ingotsUnified as IItemStack[IOreDictEntry] =
 {

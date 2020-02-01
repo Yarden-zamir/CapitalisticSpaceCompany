@@ -38,3 +38,9 @@ rivergrate.removeRecipe(<factorytech:ore_dust:15>);
 
 recipes.remove(<magneticraft:inserter>,false);
 recipes.remove(<magneticraft:multiblock_parts>,false);
+
+//
+recipes.removeByRecipeName("thermaldynamics:duct_64");
+recipes.removeByRecipeName("railcraft:rail#2$2");
+recipes.removeByRecipeName("railcraft:cart_bronze");
+recipes.removeByRecipeName("thermaldynamics:duct_64");
