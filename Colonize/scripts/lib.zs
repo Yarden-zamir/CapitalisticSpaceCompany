@@ -18,28 +18,24 @@ function disableItem(item as IItemStack){
   //any operation on a disabled item happends here
   item.addTooltip(settings.toolTipForDisabled);
   disabledItems += item;
-  for ore in item.ores{
-    ore.remove(item);
-  }
   if (loadedMods.contains("factorytech")){
     DrillGrinder.removeRecipe(item);
   }
   if (loadedMods.contains("immersiveengineering")){
-    //metal press
-    MetalPress.removeRecipe(item);
-    //Alloy Smelter
-    AlloySmelter.removeRecipe(item);
-    //ArcFurnace
-    ArcFurnace.removeRecipe(item);
-    //
-    Crusher.removeRecipe(item);
-    Crusher.removeRecipesForInput(item);
+    // MetalPress.removeRecipe(item);
+    // //Alloy Smelter
+    // AlloySmelter.removeRecipe(item);
+    // //ArcFurnace
+    // ArcFurnace.removeRecipe(item);
+    // //
+    // Crusher.removeRecipe(item);
+    // Crusher.removeRecipesForInput(item);
   }
   //smeltry
   if(loadedMods.contains("tconstruct")){
     Casting.removeTableRecipe(item);
     Casting.removeBasinRecipe(item);
-    if (isNull(item.liquid)){
+    if (!isNull(item.liquid)){
       Alloy.removeRecipe(item.liquid);
     }
   }
