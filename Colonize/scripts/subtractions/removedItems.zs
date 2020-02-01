@@ -100,6 +100,12 @@ lib.disableItems([
   <industrialrenewal:conveyor_bulk>
 ]);
 
+//
+lib.disableItems([
+  <rftools:machine_base>
+  ,<rftools:machine_frame>
+]);
+
 
 //IE
 Blueprint.removeRecipe(<immersiveengineering:bullet:2>.withTag({bullet: "silver"}));

@@ -1,9 +1,11 @@
 
 
-
+//replace
+recipes.replaceAllOccurences(<rftools:machine_frame>, <magneticraft:multiblock_parts>);
+recipes.replaceAllOccurences(<rftools:machine_base>, <ore:plate>);
 
 //2x2
-recipes.addShapeless(<modularmachinery:blockcasing>, [<ore:ingotCopper>,<minecraft:redstone>,<minecraft:iron_ingot>,<minecraft:iron_ingot>]);
+recipes.addShapeless(<modularmachinery:blockcasing>, [<ore:ingotCopper>,<minecraft:redstone>,<ore:ingotIron>,<ore:ingotIron>]);
 
 //3x3
 recipes.addShapeless(<minecraft:fire_charge>, [<ore:dustBlaze> | <ore:dustRedstone> *4 ,<ore:gunpowder>,<ore:coal> | <ore:charcoal>]);
@@ -16,3 +18,6 @@ recipes.addShaped(<railcraft:frame> * 6, [[<ore:plateBronze>, <ore:plateBronze>,
 recipes.addShaped(<railcraft:frame> * 6, [[<ore:plateBrass>, <ore:plateBrass>, <ore:plateBrass>], [<ore:stickSteel>, null, <ore:stickSteel>], [<ore:stickSteel>, <ore:stickSteel>, <ore:stickSteel>]]);
 recipes.addShaped(<railcraft:frame> * 10, [[<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>], [<ore:stickSteel>, null, <ore:stickSteel>], [<ore:stickSteel>, <ore:stickSteel>, <ore:stickSteel>]]);
 recipes.addShaped(<immersiveengineering:metal_device1:7>, [[<ore:scaffoldingSteel>, <ore:fenceSteel>, <ore:scaffoldingSteel>],[<ore:scaffoldingSteel>, <ore:fenceSteel>, <ore:scaffoldingSteel>], [<ore:scaffoldingSteel>, <immersiveengineering:metal_decoration0:4>, <ore:scaffoldingSteel>]]);
+
+recipes.addShaped(<magneticraft:multiblock_parts> * 4, [[<modularmachinery:blockcasing>, <ore:plateSteel>, <modularmachinery:blockcasing>],[<ore:plateSteel>, <factorytech:machinepart:60>, <ore:plateSteel>], [<modularmachinery:blockcasing>, <ore:plateSteel>, <modularmachinery:blockcasing>]]);
+recipes.addShaped(<magneticraft:multiblock_column> * 4, [[<ore:ingotIron>, <minecraft:concrete:*>, <ore:ingotIron>],[<ore:ingotIron>,<ore:plateSteel>, <minecraft:concrete:*>, <ore:ingotIron>,<ore:plateSteel>], [<ore:ingotIron>, <minecraft:concrete:8>, <ore:ingotIron>]]);
