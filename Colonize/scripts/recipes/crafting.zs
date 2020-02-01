@@ -21,3 +21,6 @@ recipes.addShaped(<immersiveengineering:metal_device1:7>, [[<ore:scaffoldingStee
 
 recipes.addShaped(<magneticraft:multiblock_parts> * 4, [[<modularmachinery:blockcasing>, <ore:plateSteel>, <modularmachinery:blockcasing>],[<ore:plateSteel>, <factorytech:machinepart:60>, <ore:plateSteel>], [<modularmachinery:blockcasing>, <ore:plateSteel>, <modularmachinery:blockcasing>]]);
 recipes.addShaped(<magneticraft:multiblock_column> * 4, [[<ore:ingotIron>, <minecraft:concrete:*>, <ore:ingotIron>],[<ore:ingotIron>,<ore:plateSteel>, <minecraft:concrete:*>, <ore:ingotIron>,<ore:plateSteel>], [<ore:ingotIron>, <minecraft:concrete:8>, <ore:ingotIron>]]);
+
+recipes.addShaped(<magneticraft:inserter>, [[null, <ore:nuggetIron>, <ore:ingotCopper>],[<ore:nuggetIron>, <ore:ingotCopper>, <ore:nuggetIron>], [<ore:plateIron>, <factorytech:machinepart:60>, <ore:plateIron>]]);
+recipes.addShaped(<magneticraft:inserter>, [[<ore:ingotCopper>, <ore:nuggetIron>, null],[<ore:nuggetIron>, <ore:ingotCopper>, <ore:nuggetIron>], [<ore:plateIron>, <factorytech:machinepart:60>, <ore:plateIron>]]);
