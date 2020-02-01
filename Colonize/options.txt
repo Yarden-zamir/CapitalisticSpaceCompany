@@ -85,9 +85,6 @@ key_key.hotbar.6:7
 key_key.hotbar.7:8
 key_key.hotbar.8:9
 key_key.hotbar.9:10
-key_quark.keybind.dropoff:0
-key_quark.keybind.changeHotbar:44
-key_quark.keybind.lockBuilding:37
 key_quark.emote.no:0
 key_quark.emote.yes:0
 key_quark.emote.wave:0
@@ -106,6 +103,9 @@ key_quark.emote.dab:0
 key_quark.emote.jet:0
 key_quark.emote.exorcist:0
 key_quark.emote.zombie:0
+key_quark.keybind.dropoff:0
+key_quark.keybind.changeHotbar:44
+key_quark.keybind.lockBuilding:37
 key_Scene1 start/pause:79
 key_Scene2 start/pause:80
 key_Scene3 start/pause:81
@@ -167,14 +167,13 @@ key_techguns.key.toggleSafemode:48
 key_techguns.key.toggleStepassist:47
 key_techguns.key.forceReload:19
 key_techguns.key.toggleJetpack:36
-key_key.craftingGrid:46
 key_key.control:29
 key_keybind.railcraft.loco.reverse:53:ALT
 key_keybind.railcraft.loco.faster:52:ALT
 key_keybind.railcraft.loco.slower:51:ALT
 key_keybind.railcraft.loco.mode:50:ALT
 key_keybind.railcraft.loco.whistle:49:ALT
-soundCategory_master:1.0
+soundCategory_master:0.23509933
 soundCategory_music:0.0
 soundCategory_record:1.0
 soundCategory_weather:0.0
