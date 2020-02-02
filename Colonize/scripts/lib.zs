@@ -22,20 +22,25 @@ function disableItem(item as IItemStack){
     DrillGrinder.removeRecipe(item);
   }
   if (loadedMods.contains("immersiveengineering")){
-    // MetalPress.removeRecipe(item);
-    // //Alloy Smelter
-    // AlloySmelter.removeRecipe(item);
-    // //ArcFurnace
-    // ArcFurnace.removeRecipe(item);
-    // //
-    // Crusher.removeRecipe(item);
-    // Crusher.removeRecipesForInput(item);
+    MetalPress.addRecipe(item, item, item, 0);
+    MetalPress.removeRecipe(item);
+    //Alloy Smelter
+    AlloySmelter.addRecipe(item, item, item, 0);
+    AlloySmelter.removeRecipe(item);
+    //ArcFurnace
+    ArcFurnace.addRecipe(item, item, item, 0, 0);
+    ArcFurnace.removeRecipe(item);
+    //
+    Crusher.addRecipe(item, item, 0);
+    Crusher.removeRecipe(item);
+    //Crusher.removeRecipesForInput(item);
   }
   //smeltry
   if(loadedMods.contains("tconstruct")){
     Casting.removeTableRecipe(item);
     Casting.removeBasinRecipe(item);
     if (!isNull(item.liquid)){
+      print("liquid is beeing removed from smeltery")
       Alloy.removeRecipe(item.liquid);
     }
   }
