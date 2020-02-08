@@ -18,7 +18,7 @@ CoFHWorld-1.12.2-1.3.1.7-universal.jar
 ContentTweaker-1.12.2-4.9.1.jar
 Controlling-3.0.8.jar
 CraftTweaker2-1.12-4.1.20.jar
-crafttweakerutils-0.5a.jar
+crafttweakerutils-0.6.jar
 CTM-MC1.12.2-1.0.1.30.jar
 CustomNPCs_1.12.2-(01Oct19).jar
 DefaultOptions_1.12.2-9.2.8.jar
@@ -33,12 +33,13 @@ ForgeMultipart-1.12.2-2.6.2.83-universal.jar
 FTBBackups-1.1.0.1.jar
 ImmersiveEngineering-0.12-92.jar
 immersivepetroleum-1.12.2-1.1.9.jar
-IndustrialRenewal_1.12.2-0.14.3.jar
+IndustrialRenewal_1.12.2-0.15.0.jar
 Inspirations-1.12.2-0.2.9.jar
 InventoryTweaks-1.63.jar
 inworldcrafting-1.12.2-0.13.0-universal.jar
 IvToolkit-1.3.3-1.12.jar
 jei_1.12.2-4.15.0.291.jar
+LunatriusCore-1.12.2-1.2.0.42-universal.jar
 Magneticraft_1.12-2.8.2-dev.jar
 Mantle-1.12-1.3.3.55.jar
 mcjtylib-1.12-3.5.4.jar
@@ -70,6 +71,7 @@ RecurrentComplex-1.4.8.2.jar
 RedstoneFlux-1.12-2.1.0.6-universal.jar
 rftools-1.12-7.73.jar
 rftoolsctrl-1.12-2.0.2.jar
+Schematica-1.12.2-1.8.0.169-universal.jar
 sonarcore-1.12.2-5.0.19-20.jar
 Surge-1.12.2-2.0.77.jar
 TConstruct-1.12.2-2.13.0.171.jar
