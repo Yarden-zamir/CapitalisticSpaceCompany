@@ -83,7 +83,7 @@
             "y": -1,
             "z": 0,
             "elements": [
-                "modularmachinery:blockfluidinputhatch@2"
+                "casings_fluid_in"
             ]
         },
         {

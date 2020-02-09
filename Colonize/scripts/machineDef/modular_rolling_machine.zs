@@ -4,17 +4,19 @@ import crafttweaker.item.IItemStack;
 
 //
 
-function addRecipe(itemOutput as IItemStack, inputItems as IItemStack[], processingTickTime as int){
+function addRecipe(itemOutputs as IItemStack[], itemInputs as IItemStack[], processingTickTime as int){
   var machineRegName = "modular_rolling_machine";
   var r = mods.modularmachinery.RecipeBuilder.newBuilder(
     machineRegName+"_"+itemOutput.name, machineRegName, processingTickTime
   );
   //adding inputs
-  for input in inputItems{
+  for input in itemInputs{
     r.addItemInput(input);
   }
   //adding output
-  r.addItemOutput(itemOutput);
+  for output in itemOutputs{
+    r.addItemOutput(output);
+  }
 
   //build the recipe
   r.build();

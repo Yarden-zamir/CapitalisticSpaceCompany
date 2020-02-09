@@ -1,20 +1,30 @@
 import mods.modularmachinery.RecipePrimer;
 import crafttweaker.item.IItemStack;
+import crafttweaker.liquid.ILiquidStack;
+
 #priority 70
 
 //
 
-function addRecipe(itemOutput as IItemStack, inputItems as IItemStack[], processingTickTime as int){
-  var machineRegName = "modular_rolling_machine";
+//no more than 2 liquid outputs
+function addRecipe(liquidInput as ILiquidStack, liquidOutputs as ILiquidStack[], itemOutput IItemStack,itemInput as IItemStack, processingTickTime as int, flux as int){
+  var machineRegName = "modular_electrolyzer";
   var r = mods.modularmachinery.RecipeBuilder.newBuilder(
-    machineRegName+"_"+itemOutput.name, machineRegName, processingTickTime
+    machineRegName+"_"+liquidOutputs[0]+"_"+liquidInput.name, machineRegName, processingTickTime
   );
   //adding inputs
-  for input in inputItems{
-    r.addItemInput(input);
+  r.addFluidInput(liquidInput);
+  for input in itemInputs{
+  r.addItemInput(input);
   }
   //adding output
-  r.addItemOutput(itemOutput);
+  for output in liquidOutputs{
+    r.addFluidOutput(output);
+  }
+  //adding output
+  for output in itemOutputs{
+    r.addItemOutput(output);
+  }
 
   //build the recipe
   r.build();
