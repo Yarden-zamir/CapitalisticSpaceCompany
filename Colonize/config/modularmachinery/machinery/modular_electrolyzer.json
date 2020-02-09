@@ -1,0 +1,106 @@
+{
+    "registryname": "modular_electrolyzer",
+    "localizedname": "Electrolyzer",
+    "color": "1F2645",
+    "parts": [
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:metal_device1@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:metal_device1@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "minecraft:cauldron@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "nbt": {"facing":"0"},
+            "elements": [
+                "immersiveengineering:connector@5"
+            ]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "z": 0,
+          "nbt": {"facing":"0"},
+          "elements": [
+            "immersiveengineering:connector@5"
+          ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "casings_fluid_out"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "casings_fluid_in"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "casings_fluid_out"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 0,
+            "elements": [
+              "casings_item",
+              "casings_decorative"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockfluidinputhatch@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "elements": [
+              "casings_item",
+              "casings_decorative"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:metal_device1@6"
+            ]
+        },
+    ]}

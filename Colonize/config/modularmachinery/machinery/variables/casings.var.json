@@ -23,8 +23,19 @@
         "modularmachinery:blockinputbus@0",
         "modularmachinery:blockoutputbus@0",
         "modularmachinery:blockinputbus@1",
-        "modularmachinery:blockoutputbus@1",
-        "modularmachinery:blockinputbus@3",
-        "modularmachinery:blockoutputbus@3"
+        "modularmachinery:blockoutputbus@1"
+    ],
+    "casings_fluid_in": [
+      "modularmachinery:blockfluidinputhatch@0",
+
+    ],
+    "casings_fluid_out": [
+      "modularmachinery:blockfluidoutputhatch@0",
+    ],
+    "casings_energy_in": [
+      "modularmachinery:blockenergyinputhatch@2"
+    ],
+    "casings_energy_out":[
+      "modularmachinery:blockenergyoutputhatch@2"
     ]
 }
