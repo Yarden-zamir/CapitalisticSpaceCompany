@@ -21,17 +21,17 @@ function disableItem(item as IItemStack){
   if (loadedMods.contains("factorytech")){
     DrillGrinder.removeRecipe(item);
   }
-  if (loadedMods.contains("immersiveengineering")){
-    MetalPress.addRecipe(item, item, item, 0);
+  if (loadedMods.contains("immersiveengineering")&&false){
+    MetalPress.addRecipe(item, <minecraft:stone>, <minecraft:stone>, 1);
     MetalPress.removeRecipe(item);
     //Alloy Smelter
-    AlloySmelter.addRecipe(item, item, item, 0);
+    AlloySmelter.addRecipe(item, <minecraft:stone>, <minecraft:stone>, 1);
     AlloySmelter.removeRecipe(item);
     //ArcFurnace
-    ArcFurnace.addRecipe(item, item, item, 0, 0);
+    ArcFurnace.addRecipe(item, <minecraft:stone>, <minecraft:stone>, 1, 1);
     ArcFurnace.removeRecipe(item);
     //
-    Crusher.addRecipe(item, item, 0);
+    Crusher.addRecipe(item, <minecraft:stone>, 1);
     Crusher.removeRecipe(item);
     //Crusher.removeRecipesForInput(item);
   }
@@ -40,7 +40,7 @@ function disableItem(item as IItemStack){
     Casting.removeTableRecipe(item);
     Casting.removeBasinRecipe(item);
     if (!isNull(item.liquid)){
-      print("liquid is beeing removed from smeltery")
+      print("liquid is beeing removed from smeltery");
       Alloy.removeRecipe(item.liquid);
     }
   }
