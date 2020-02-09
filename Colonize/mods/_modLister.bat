@@ -1,1 +1,1 @@
-dir /b /a-d > _list.txt
+dir /b /a-d > _mods.txt
