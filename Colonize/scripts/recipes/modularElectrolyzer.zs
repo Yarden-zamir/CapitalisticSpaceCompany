@@ -1,3 +1,6 @@
 import scripts.machineDef.modular_electrolyzer;
 
-modular_electrolyzer.addRecipe(<minecraft:hopper>,[<minecraft:iron_ingot>*16],20);
+var energyRec = 160; // temp
+modular_electrolyzer.addRecipe(<liquid:water>*3, [<liquid:hydrogen>*2,<liquid:oxygen>*1],[],[], 1, energyRec);
+
+// 1hydrogen = 80

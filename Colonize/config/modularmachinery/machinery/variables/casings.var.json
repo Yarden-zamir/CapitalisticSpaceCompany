@@ -26,11 +26,10 @@
         "modularmachinery:blockoutputbus@1"
     ],
     "casings_fluid_in": [
-      "modularmachinery:blockfluidinputhatch@0",
-
+      "modularmachinery:blockfluidinputhatch@0"
     ],
     "casings_fluid_out": [
-      "modularmachinery:blockfluidoutputhatch@0",
+      "modularmachinery:blockfluidoutputhatch@0"
     ],
     "casings_energy_in": [
       "modularmachinery:blockenergyinputhatch@2"

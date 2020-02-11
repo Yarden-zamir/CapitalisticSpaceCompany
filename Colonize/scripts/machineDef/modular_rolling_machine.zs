@@ -7,7 +7,7 @@ import crafttweaker.item.IItemStack;
 function addRecipe(itemOutputs as IItemStack[], itemInputs as IItemStack[], processingTickTime as int){
   var machineRegName = "modular_rolling_machine";
   var r = mods.modularmachinery.RecipeBuilder.newBuilder(
-    machineRegName+"_"+itemOutput.name, machineRegName, processingTickTime
+    machineRegName+"_"+itemOutputs[0].name, machineRegName, processingTickTime
   );
   //adding inputs
   for input in itemInputs{

@@ -11,7 +11,7 @@ bobView:true
 anaglyph3d:false
 maxFps:100
 fboEnable:true
-difficulty:0
+difficulty:2
 fancyGraphics:true
 ao:1
 renderClouds:false
@@ -25,7 +25,7 @@ chatLinks:true
 chatLinksPrompt:true
 chatOpacity:1.0
 snooperEnabled:true
-fullscreen:false
+fullscreen:true
 enableVsync:false
 useVbo:true
 hideServerAddress:false
@@ -85,8 +85,6 @@ key_key.hotbar.6:7
 key_key.hotbar.7:8
 key_key.hotbar.8:9
 key_key.hotbar.9:10
-key_quark.keybind.dropoff:0
-key_quark.keybind.changeHotbar:44
 key_quark.emote.no:0
 key_quark.emote.yes:0
 key_quark.emote.wave:0
@@ -105,6 +103,8 @@ key_quark.emote.dab:0
 key_quark.emote.jet:0
 key_quark.emote.exorcist:0
 key_quark.emote.zombie:0
+key_quark.keybind.dropoff:0
+key_quark.keybind.changeHotbar:44
 key_quark.keybind.lockBuilding:37
 key_Scene1 start/pause:79
 key_Scene2 start/pause:80
@@ -123,16 +123,6 @@ key_openblocks.keybind.vario_vol_down:0
 key_key.toggleFoVChanges:51:SHIFT
 key_key.reloadSoundSystem:66:SHIFT
 key_key.toggleTimeOfDayOverlay:0
-key_schematica.key.load:181
-key_schematica.key.save:55
-key_schematica.key.control:58
-key_schematica.key.layerInc:0
-key_schematica.key.layerDec:0
-key_schematica.key.layerToggle:0
-key_schematica.key.renderToggle:0
-key_schematica.key.printerToggle:0
-key_schematica.key.moveHere:0
-key_schematica.key.pickBlock:-98:SHIFT
 key_key.dismount:42
 key_key.narrator:48:CONTROL
 key_key.jei.toggleOverlay:24:CONTROL

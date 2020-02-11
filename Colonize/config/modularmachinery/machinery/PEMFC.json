@@ -1,12 +1,14 @@
 {
+    "registryname": "modular_PEMFC",
+    "localizedname": "PEMFC",
+    "color": "1F2645",
     "parts": [
         {
             "x": 0,
             "y": 0,
             "z": 1,
-            "nbt": {"input":"1b","size":"2","casingColor":"3487056","id":"minecraft:tilefluidinputhatch","tank":{"Empty":""}},
             "elements": [
-                "modularmachinery:blockfluidinputhatch@2"
+                "casings_fluid_in"
             ]
         },
         {
@@ -21,7 +23,7 @@
             "x": 1,
             "y": 0,
             "z": 1,
-            "nbt": {"facing":"3","ifluxEnergy":"0","id":"immersiveengineering:relayhv"},
+            "nbt": {"facing":"4"},
             "elements": [
                 "immersiveengineering:connector@5"
             ]
@@ -38,34 +40,31 @@
             "x": 2,
             "y": 0,
             "z": 1,
-            "nbt": {"id":"inspirations:cauldron","state":{"water":"1b"}},
             "elements": [
-                "minecraft:cauldron@3"
+                "minecraft:cauldron"
             ]
         },
         {
             "x": 3,
             "y": 0,
             "z": 0,
-            "nbt": {"hatchSize":"2","casingColor":"3487056","id":"minecraft:tileenergyoutputhatch","energy":"0L"},
             "elements": [
-                "modularmachinery:blockenergyoutputhatch@2"
+                "casings_energy_out"
             ]
         },
         {
             "x": 2,
             "y": 0,
             "z": 2,
-            "nbt": {"input":"0b","size":"2","casingColor":"3487056","id":"minecraft:tilefluidoutputhatch","tank":{"Empty":""}},
             "elements": [
-                "modularmachinery:blockfluidoutputhatch@2"
+                "casings_fluid_out"
             ]
         },
         {
             "x": 3,
             "y": 0,
             "z": 1,
-            "nbt": {"facing":"2","ifluxEnergy":"0","id":"immersiveengineering:relayhv"},
+            "nbt": {"facing":"5"},
             "elements": [
                 "immersiveengineering:connector@5"
             ]
@@ -82,9 +81,8 @@
             "x": 4,
             "y": 0,
             "z": 1,
-            "nbt": {"input":"1b","size":"2","casingColor":"3487056","id":"minecraft:tilefluidinputhatch","tank":{"Empty":""}},
             "elements": [
-                "modularmachinery:blockfluidinputhatch@2"
+                "casings_fluid_in"
             ]
         }
     ]}
