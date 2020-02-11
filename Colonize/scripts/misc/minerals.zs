@@ -16,6 +16,13 @@ Excavator.removeMineral("Lead"); //lead and silver
 Excavator.removeMineral("Silver"); //lead and silver
 Excavator.removeMineral("Galena"); //Galena
 
+var Iron = Excavator.getMineral("Iron");
+var Gold = Excavator.getMineral("Gold");
+var Copper = Excavator.getMineral("Copper");
+print("Iron fail chance is " + Iron.failChance);
+print("Gold fail chance is " + Gold.failChance);
+print("Copper fail chance is " + Copper.failChance);
+
 addOre(<minecraft:iron_ore>,"Iron");
 addOre(<minecraft:gold_ore>,"Gold");
 addOre(<immersiveengineering:ore>,"Copper");

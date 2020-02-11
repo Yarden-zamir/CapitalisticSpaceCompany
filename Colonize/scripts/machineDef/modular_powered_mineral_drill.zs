@@ -9,7 +9,7 @@ import scripts.machineDef.generic_drill_addition as drill;
 
 //
 static typicalProcessingTime as int = 30;
-static outputEfficiency as double = 0.5025 ;
+static outputEfficiency as double = 0.4025 ;
 static inputEfficiency as double = 0.1 ; //It will take about x runs to consume input
 static sideProductChance as double = 0.125 ;
 static baseEnergyRec as int = 1; //move to settings
