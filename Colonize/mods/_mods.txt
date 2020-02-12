@@ -82,5 +82,7 @@ TinkersExtras-1.12.2-1.1.0.jar
 UniDict-1.12.2-2.9.5.jar
 VanillaFix-1.0.10-99.jar
 WanionLib-1.12.2-2.4.jar
-_list.txt
+Zen Summoning-1.12-1.0.19.jar
+zenscroll-1.4.0.jar
 _modLister.bat
+_mods.txt
