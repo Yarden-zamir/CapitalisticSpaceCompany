@@ -123,6 +123,7 @@ key_openblocks.keybind.vario_vol_down:0
 key_key.toggleFoVChanges:51:SHIFT
 key_key.reloadSoundSystem:66:SHIFT
 key_key.toggleTimeOfDayOverlay:0
+key_zenscroll.options.modifier_key:29
 key_key.dismount:42
 key_key.narrator:48:CONTROL
 key_key.jei.toggleOverlay:24:CONTROL

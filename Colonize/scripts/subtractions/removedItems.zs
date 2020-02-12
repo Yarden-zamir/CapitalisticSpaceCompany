@@ -215,6 +215,15 @@ lib.disableItems([
 lib.disableItems([
   <rftools:machine_base>
   ,<rftools:machine_frame>
+  ,<rftools:inventory_module> //we'll keep only the + modules
+  ,<rftools:energy_module>
+  ,<rftools:fluid_module>
+  ,<rftools:counter_module:*>
+  ,<rftools:storage_module_tablet>
+  ,<rftools:storage_control_module>
+  ,<rftools:remote_storage>
+  ,<rftools:modular_storage>
+  ,<rftools:dump_module>
 ]);
 
 

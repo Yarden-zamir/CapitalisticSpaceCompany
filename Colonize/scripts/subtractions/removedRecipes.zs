@@ -22,6 +22,24 @@ Blueprint.removeRecipe(<immersiveengineering:mold:4>);
 Blueprint.removeRecipe(<immersiveengineering:mold:5>);
 Blueprint.removeRecipe(<immersiveengineering:mold:6>);
 Blueprint.removeRecipe(<immersiveengineering:mold:7>);
+//scroll groups
+recipes.remove(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:uncontrolled"}));
+recipes.remove(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:dropper"}));
+recipes.remove(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:vertical"}));
+recipes.remove(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:splitter"}));
+recipes.remove(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:droppercovered"}));
+recipes.remove(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:verticalcovered"}));
+recipes.remove(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:extractcovered"}));
+recipes.remove(<immersiveengineering:connector:3>);
+recipes.remove(<immersiveengineering:connector:5>);
+recipes.remove(<rftools:shape_card:1>);
+recipes.remove(<rftools:shape_card:3>);
+recipes.remove(<rftools:shape_card:4>);
+recipes.remove(<rftools:shape_card:5>);
+recipes.remove(<rftools:shape_card:6>);
+recipes.remove(<rftools:shape_card:7>);
+recipes.remove(<rftools:shape_card:9>);
+recipes.remove(<rftools:shape_card:10>);
 //removed electrode crafting
 Blueprint.removeRecipe(<immersiveengineering:graphite_electrode>);
 
