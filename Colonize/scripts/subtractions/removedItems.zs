@@ -223,7 +223,7 @@ lib.disableItems([
   ,<rftools:storage_control_module>
   ,<rftools:remote_storage>
   ,<rftools:modular_storage>
-  ,<rftools:dump_module>
+  ,<rftools:dump_module> 
 ]);
 
 
