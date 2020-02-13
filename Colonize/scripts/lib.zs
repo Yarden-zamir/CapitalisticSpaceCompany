@@ -67,3 +67,9 @@ function disableItems(items as IItemStack[]){
     disableItem(item);
   }
 }
+
+function hideBulk(items as IItemStack[]){
+  for item in items {
+    JEI.hide(item);
+  }
+}
