@@ -1,3 +1,4 @@
+import scripts.lib;
 
 
 //replace
@@ -24,3 +25,14 @@ recipes.addShaped(<magneticraft:multiblock_column> * 4, [[<ore:ingotIron>, <mine
 
 recipes.addShaped(<magneticraft:inserter>, [[null, <ore:nuggetIron>, <ore:ingotCopper>],[<ore:nuggetIron>, <ore:ingotCopper>, <ore:nuggetIron>], [<ore:plateIron>, <factorytech:machinepart:60>, <ore:plateIron>]]);
 recipes.addShaped(<magneticraft:inserter>, [[<ore:ingotCopper>, <ore:nuggetIron>, null],[<ore:nuggetIron>, <ore:ingotCopper>, <ore:nuggetIron>], [<ore:plateIron>, <factorytech:machinepart:60>, <ore:plateIron>]]);
+recipes.addShapeless(<modularrouters:blank_module>,[
+  <minecraft:dispenser>
+  ,<minecraft:diamond_pickaxe>
+  ,<immersiveengineering:metal>
+  ,<minecraft:paper>
+  ,<minecraft:paper>
+  ,<minecraft:paper>
+  ,<immersiveengineering:metal>
+  ,<minecraft:dye:11>
+  ,<immersiveengineering:metal>
+]);
