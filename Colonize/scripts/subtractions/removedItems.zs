@@ -165,6 +165,7 @@ lib.disableItems([
 
 ]);
 lib.disableItems([
+  <magneticraft:water_generator>,
   <magneticraft:fabricator>,
   <magneticraft:iron_pipe>,
   <magneticraft:ingots:2>,
@@ -223,10 +224,13 @@ lib.disableItems([
   ,<rftools:storage_control_module>
   ,<rftools:remote_storage>
   ,<rftools:modular_storage>
-  ,<rftools:dump_module> 
+  ,<rftools:dump_module>
 ]);
-
-
+lib.disableItems([
+  <effortlessbuilding:reach_upgrade1>
+  ,<effortlessbuilding:reach_upgrade2>
+  ,<effortlessbuilding:reach_upgrade3>
+]);
 //IE
 Blueprint.removeRecipe(<immersiveengineering:bullet:2>.withTag({bullet: "silver"}));
 lib.disableItems([
@@ -244,4 +248,28 @@ lib.disableItems([
   ,<immersiveengineering:metal_device0:2>
   ,<immersiveengineering:powerpack>
 
+]);
+
+//
+lib.disableItems([
+  <modularrouters:module:13>.withTag({ModuleFilter: [], Flags: 13 as byte})
+  ,<modularrouters:module:1>.withTag({Speed: 0.0 as float, ModuleFilter: [], Pitch: 0.0 as float, Flags: 13 as byte, Yaw: 0.0 as float})
+  ,<modularrouters:module:2>.withTag({ModuleFilter: [], Flags: 13 as byte})
+  ,<modularrouters:module:5>.withTag({ModuleFilter: [], Flags: 13 as byte})
+  ,<modularrouters:module:6>.withTag({ModuleFilter: [], Flags: 13 as byte})
+  ,<modularrouters:module:7>.withTag({ModuleFilter: [], Flags: 13 as byte})
+  ,<modularrouters:module:8>.withTag({ModuleFilter: [], Flags: 13 as byte})
+  ,<modularrouters:module:9>.withTag({ModuleFilter: [], Flags: 13 as byte})
+  ,<modularrouters:module:12>.withTag({ModuleFilter: [], StrongSignal: 0 as byte, SignalLevel: 15, Flags: 13 as byte})
+  ,<modularrouters:module:17>.withTag({ModuleFilter: [], Flags: 13 as byte})
+  ,<modularrouters:module:14>.withTag({FluidDir: 0 as byte, ModuleFilter: [], Flags: 13 as byte, MaxTransfer: 1000})
+  ,<modularrouters:upgrade:5>
+  ,<modularrouters:upgrade>
+  ,<modularrouters:augment>
+  ,<modularrouters:augment:1>
+  ,<modularrouters:augment:6>
+  ,<modularrouters:augment:7>
+  ,<omlib:fake_sword>
+  ,<omlib:network_cable>
+  ,<modularrouters:module>.withTag({ModuleFilter: [], Flags: 13 as byte})
 ]);
