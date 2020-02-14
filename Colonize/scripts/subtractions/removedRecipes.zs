@@ -55,8 +55,7 @@ recipes.remove(<rftools:fluid_module>);
 recipes.remove(<rftools:clock_module>);
 recipes.remove(<rftools:energyplus_module>);
 recipes.remove(<rftools:inventoryplus_module>);
-recipes.remove(<immersiveengineering:blueprint>.withTag({blueprint: "bullet"}));
-recipes.remove(<immersiveengineering:blueprint>.withTag({blueprint: "specialBullet"}));
+recipes.remove(<immersiveengineering:blueprint>);
 //removed electrode crafting
 Blueprint.removeRecipe(<immersiveengineering:graphite_electrode>);
 

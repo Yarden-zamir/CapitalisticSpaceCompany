@@ -64,7 +64,8 @@ scrollGroups = [
     ,<rftools:counterplus_module>
   )
   ,ScrollGroup.of(
-    <immersiveengineering:blueprint>.withTag({blueprint: "components"})
+    <immersiveengineering:tool:3>
+    ,<immersiveengineering:blueprint>.withTag({blueprint: "components"})
     ,<immersiveengineering:blueprint>.withTag({blueprint: "bullet"})
     ,<immersiveengineering:blueprint>.withTag({blueprint: "specialBullet"})
   )
@@ -98,7 +99,7 @@ scrollGroups = [
     ,<immersivepetroleum:schematic>.withTag({multiblock: "IE:Mixer"})
     ,<immersivepetroleum:schematic>.withTag({multiblock: "IP:DistillationTower"})
     ,<immersivepetroleum:schematic>.withTag({multiblock: "IP:Pumpjack"})
-    ,<immersivepetroleum:schematic>.withTag({multiblock: "IE:ExcavatorDemo", flip: 1 as byte})
+    ,<immersivepetroleum:schematic>.withTag({multiblock: "IE:ExcavatorDemo"})
   )
   ,ScrollGroup.of(
     <magneticraft:guide_book>
