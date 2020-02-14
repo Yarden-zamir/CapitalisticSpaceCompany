@@ -83,3 +83,14 @@ function renameBulk(list as string[IItemStack]){
     rename(item,newName);
   }
 }
+
+function restrictItem(item as IItemStack, stage as string){
+  
+}
+
+function hideForSurvival(item as IItemStack){
+
+}
+function hideForSurvivalBulk(items[] as IItemstack){
+
+}

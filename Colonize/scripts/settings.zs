@@ -5,6 +5,11 @@ import crafttweaker.formatting.IFormattedText;
 
 static showDisabled as bool = false;
 static toolTipForDisabled as IFormattedText = format.darkRed("disabled");
+static showRestricteddItemsForSurvivalPlayers as bool = false; //items like creative tanks and upgrades and such
+static showRestrictedItemsForCreateivePlayers as bool = true; //
+// static gamestageHideRules as = {
+//
+// };
 //change to a dynamic loader system
 static ingotsUnified as IItemStack[IOreDictEntry] =
 {
