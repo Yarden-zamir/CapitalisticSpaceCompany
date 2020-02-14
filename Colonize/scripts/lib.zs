@@ -73,3 +73,13 @@ function hideBulk(items as IItemStack[]){
     JEI.hide(item);
   }
 }
+
+function rename(item as IItemStack, newName as string){
+  item.displayName = newName;
+}
+
+function renameBulk(list as string[IItemStack]){
+  for item, newName in list{
+    rename(item,newName);
+  }
+}
