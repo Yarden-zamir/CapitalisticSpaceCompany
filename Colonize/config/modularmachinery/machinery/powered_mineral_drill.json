@@ -96,7 +96,7 @@
             "y": [0,1,2,3],
             "z": 2,
             "elements": [
-                "casings_item","casings_energy"
+                "casings_item","casings_energy_in"
             ]
         },
         {
@@ -104,7 +104,7 @@
             "y": 0,
             "z": 0,
             "elements": [
-                "modularmachinery:blockcasing@0"
+                "casings_decorative"
             ]
         },
         {
@@ -112,7 +112,7 @@
             "y": 0,
             "z": 1,
             "elements": [
-                "modularmachinery:blockcasing@0"
+                "casings_decorative"
             ]
         },
         {
@@ -120,7 +120,7 @@
             "y": 0,
             "z": 4,
             "elements": [
-                "modularmachinery:blockcasing@0"
+                "casings_decorative"
             ]
         },
         {
@@ -128,7 +128,7 @@
             "y": 0,
             "z": 3,
             "elements": [
-                "modularmachinery:blockcasing@0"
+                "casings_decorative"
             ]
         },
         {
@@ -136,7 +136,7 @@
             "y": 4,
             "z": 2,
             "elements": [
-                "modularmachinery:blockcasing@0"
+                "casings_decorative"
             ]
         },
         {
