@@ -111,3 +111,7 @@ recipes.remove(<modularrouters:blank_module>);
 recipes.remove(<botania:lightrelay:1>);
 recipes.remove(<botania:lightrelay:2>);
 recipes.remove(<botania:lightrelay:3>);
+
+recipes.removeShapeless(<immersiveengineering:treated_wood:0>, [<immersiveengineering:treated_wood:2>]);
+recipes.removeShapeless(<immersiveengineering:treated_wood:1>, [<immersiveengineering:treated_wood:0>]);
+recipes.removeShapeless(<immersiveengineering:treated_wood:2>, [<immersiveengineering:treated_wood:1>]);

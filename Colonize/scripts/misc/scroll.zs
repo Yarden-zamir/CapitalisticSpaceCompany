@@ -126,6 +126,11 @@ scrollGroups = [
       ,<botania:lightrelay:2>
       ,<botania:lightrelay:3>
   )
+  ,ScrollGroup.of(
+    <immersiveengineering:treated_wood>
+    ,<immersiveengineering:treated_wood:1>
+    ,<immersiveengineering:treated_wood:2>
+  )
 ];
 for scrollgroup in scrollGroups{
   ZenScroll.add(scrollgroup);
