@@ -276,3 +276,11 @@ lib.disableItems([
   ,<omlib:network_cable>
   ,<modularrouters:module>.withTag({ModuleFilter: [], Flags: 13 as byte})
 ]);
+//
+lib.disableItems([
+  <compactmachines3:machine:0>
+  ,<compactmachines3:machine:1>
+  ,<compactmachines3:machine:2>
+  ,<compactmachines3:machine:3>
+  ,<compactmachines3:machine:4>
+]);
