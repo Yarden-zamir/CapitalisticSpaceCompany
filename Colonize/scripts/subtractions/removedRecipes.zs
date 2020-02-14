@@ -55,6 +55,7 @@ recipes.remove(<rftools:fluid_module>);
 recipes.remove(<rftools:clock_module>);
 recipes.remove(<rftools:energyplus_module>);
 recipes.remove(<rftools:inventoryplus_module>);
+//
 recipes.remove(<immersiveengineering:blueprint>);
 //removed electrode crafting
 Blueprint.removeRecipe(<immersiveengineering:graphite_electrode>);
@@ -104,3 +105,9 @@ recipes.remove(<magneticraft:pumpjack>);
 //
 
 recipes.remove(<modularrouters:blank_module>);
+
+///
+
+recipes.remove(<botania:lightrelay:1>);
+recipes.remove(<botania:lightrelay:2>);
+recipes.remove(<botania:lightrelay:3>);

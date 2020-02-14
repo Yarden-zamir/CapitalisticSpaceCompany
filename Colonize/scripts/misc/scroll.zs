@@ -120,6 +120,12 @@ scrollGroups = [
     ,<magneticraft:container>
     ,<magneticraft:pumpjack>
   )
+  ,ScrollGroup.of(
+      <botania:lightrelay:0>
+      ,<botania:lightrelay:1>
+      ,<botania:lightrelay:2>
+      ,<botania:lightrelay:3>
+  )
 ];
 for scrollgroup in scrollGroups{
   ZenScroll.add(scrollgroup);
