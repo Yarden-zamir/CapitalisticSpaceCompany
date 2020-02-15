@@ -85,12 +85,12 @@ function renameBulk(list as string[IItemStack]){
 }
 
 function restrictItem(item as IItemStack, stage as string){
-  
+
 }
 
 function hideForSurvival(item as IItemStack){
 
 }
-function hideForSurvivalBulk(items[] as IItemstack){
+function hideForSurvivalBulk(items as IItemStack[]){
 
 }

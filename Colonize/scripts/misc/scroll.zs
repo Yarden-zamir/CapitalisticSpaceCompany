@@ -1,5 +1,9 @@
 import mods.zenscroll.ZenScroll;
 import mods.zenscroll.ScrollGroup;
+import scripts.machineDef.modular_cycler as cycler;
+import scripts.settings;
+import scripts.lib;
+import crafttweaker.item.IItemStack;
 
 var scrollGroups as ScrollGroup[];
 scrollGroups = [
@@ -132,6 +136,14 @@ scrollGroups = [
     ,<immersiveengineering:treated_wood:2>
   )
 ];
+
 for scrollgroup in scrollGroups{
   ZenScroll.add(scrollgroup);
+  var tempArray as IItemStack[] = scrollgroup.items;
+  var lastItem as IItemStack= tempArray[tempArray.length]; //makes sure the it loops
+
+  for item in tempArray{
+    cycler.addRecipe(item,lastItem);
+    lastItem=item;
+  }
 }
