@@ -5,9 +5,9 @@ import scripts.settings;
 import scripts.lib;
 import crafttweaker.item.IItemStack;
 
-var scrollGroups as ScrollGroup[];
-scrollGroups = [
-  ScrollGroup.of(
+var scrollGroups as IItemStack[][string];
+scrollGroups = {
+  "Conveyors":[
     <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"})
     ,<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"})
     ,<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:uncontrolled"})
@@ -15,45 +15,45 @@ scrollGroups = [
     ,<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:vertical"})
     ,<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:splitter"})
     ,<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:extract"})
-  )
-  ,ScrollGroup.of(
+  ]
+  ,"Covered Conveyors":[
     <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:covered"})
     ,<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:droppercovered"})
     ,<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:verticalcovered"})
     ,<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:extractcovered"})
-  )
-  ,ScrollGroup.of(
+  ]
+  ,"mv":[
     <immersiveengineering:connector:2>
     ,<immersiveengineering:connector:3>
-  )
-  ,ScrollGroup.of(
+  ]
+  ,"hv":[
     <immersiveengineering:connector:4>
     ,<immersiveengineering:connector:5>
-  )
-  ,ScrollGroup.of(
+  ]
+  ,"shape cards":[
     <rftools:shape_card>
     ,<rftools:shape_card:1>
-  )
-  ,ScrollGroup.of(
+  ]
+  ,"more shape cards":[
     <rftools:shape_card:2>
     ,<rftools:shape_card:3>
     ,<rftools:shape_card:4>
     ,<rftools:shape_card:5>
     ,<rftools:shape_card:6>
     ,<rftools:shape_card:7>
-  )
-  ,ScrollGroup.of(
+  ]
+  ,"even more shape cards":[
     <rftools:shape_card:8>
     ,<rftools:shape_card:9>
     ,<rftools:shape_card:10>
-  )
-  ,ScrollGroup.of(
+  ]
+  ,"control cards":[
     <rftoolscontrol:variable_module>
     ,<rftoolscontrol:interaction_module>
     ,<rftoolscontrol:console_module>
     ,<rftoolscontrol:vectorart_module>
-  )
-  ,ScrollGroup.of(
+  ]
+  ,"screen modules":[
     <rftools:text_module>
     ,<rftools:redstone_module>
     ,<rftools:elevator_button_module>
@@ -66,22 +66,22 @@ scrollGroups = [
     ,<rftools:energyplus_module>
     ,<rftools:inventoryplus_module>
     ,<rftools:counterplus_module>
-  )
-  ,ScrollGroup.of(
+  ]
+  ,"blueprints":[
     <immersiveengineering:tool:3>
     ,<immersiveengineering:blueprint>.withTag({blueprint: "components"})
     ,<immersiveengineering:blueprint>.withTag({blueprint: "bullet"})
     ,<immersiveengineering:blueprint>.withTag({blueprint: "specialBullet"})
-  )
-  ,ScrollGroup.of(
+  ]
+  ,"catwalk":[
     <industrialrenewal:catwalk_steel_pillar>
     ,<industrialrenewal:catwalk_column_steel>
-  )
-  ,ScrollGroup.of(
+  ]
+  ,"big fence":[
     <industrialrenewal:fence_big_column>
     ,<industrialrenewal:fence_big_corner>
-  )
-  ,ScrollGroup.of(
+  ]
+  ,"projectors":[
     <immersivepetroleum:schematic>
     ,<immersivepetroleum:schematic>.withTag({multiblock: "IE:CokeOven"})
     ,<immersivepetroleum:schematic>.withTag({multiblock: "IE:AlloySmelter"})
@@ -104,8 +104,8 @@ scrollGroups = [
     ,<immersivepetroleum:schematic>.withTag({multiblock: "IP:DistillationTower"})
     ,<immersivepetroleum:schematic>.withTag({multiblock: "IP:Pumpjack"})
     ,<immersivepetroleum:schematic>.withTag({multiblock: "IE:ExcavatorDemo"})
-  )
-  ,ScrollGroup.of(
+  ]
+  ,"magneticraft blueprints":[
     <magneticraft:guide_book>
     ,<magneticraft:big_electric_furnace>
     ,<magneticraft:steam_turbine>
@@ -123,26 +123,25 @@ scrollGroups = [
     ,<magneticraft:solar_mirror>
     ,<magneticraft:container>
     ,<magneticraft:pumpjack>
-  )
-  ,ScrollGroup.of(
+  ]
+  ,"Luminizers":[
       <botania:lightrelay:0>
       ,<botania:lightrelay:1>
       ,<botania:lightrelay:2>
       ,<botania:lightrelay:3>
-  )
-  ,ScrollGroup.of(
+  ]
+  ,"Treated wood types":[
     <immersiveengineering:treated_wood>
     ,<immersiveengineering:treated_wood:1>
     ,<immersiveengineering:treated_wood:2>
-  )
-];
+  ]
+};
 
-for scrollgroup in scrollGroups{
+for name, scrollgroup in scrollGroups{
   ZenScroll.add(scrollgroup);
-  var tempArray as IItemStack[] = scrollgroup.items;
-  var lastItem as IItemStack= tempArray[tempArray.length]; //makes sure the it loops
+  var lastItem as IItemStack= scrollgroup[scrollgroup.length - 1]; //makes sure the it loops
 
-  for item in tempArray{
+  for item in scrollgroup{
     cycler.addRecipe(item,lastItem);
     lastItem=item;
   }
