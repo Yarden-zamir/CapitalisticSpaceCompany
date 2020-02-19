@@ -34,13 +34,16 @@ foamfix-0.10.10-1.12.2.jar
 Forgelin-1.8.4.jar
 ForgeMultipart-1.12.2-2.6.2.83-universal.jar
 FTBBackups-1.1.0.1.jar
+GameStages-1.12.2-2.0.117.jar
 ImmersiveEngineering-0.12-92.jar
 immersivepetroleum-1.12.2-1.1.9.jar
+ImmersiveTechnology-1.12.2-1.6.43.jar
 incorporeal-1.2.4.jar
 IndustrialRenewal_1.12.2-0.15.0.jar
 Inspirations-1.12.2-0.2.9.jar
 InventoryTweaks-1.64+dev.150.jar
 inworldcrafting-1.12.2-1.2.0-universal.jar
+ItemStages-1.12.2-2.0.51.jar
 IvToolkit-1.3.3-1.12.jar
 jei_1.12.2-4.15.0.293.jar
 Magneticraft_1.12-2.8.2-dev.jar
@@ -55,6 +58,7 @@ modular-routers-1.12.2-3.2.2.jar
 modularmachinery-1.12.2-1.10.0.jar
 MouseTweaks-2.10-mc1.12.2.jar
 MTLib-3.0.6.jar
+NuclearCraft-2o.1.0-1.12.2.jar
 obfuscate-0.2.6-1.12.2.jar
 omlib-1.12.2-3.2.0-250.jar
 OpenBlocks-1.12.2-1.8.1.jar
