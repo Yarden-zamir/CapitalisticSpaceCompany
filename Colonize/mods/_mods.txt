@@ -82,7 +82,7 @@ RedstoneFlux-1.12-2.1.0.6-universal.jar
 rftools-1.12-7.73.jar
 rftoolsctrl-1.12-2.0.2.jar
 sonarcore-1.12.2-5.0.19-20.jar
-StorageDrawers-1.12.2-5.4.0.jar
+StorageDrawers-1.12.2-5.4.1.jar
 Surge-1.12.2-2.0.77.jar
 TConstruct-1.12.2-2.13.0.179.jar
 theoneprobe-1.12-1.4.28.jar
