@@ -135,6 +135,10 @@ scrollGroups = {
     ,<immersiveengineering:treated_wood:1>
     ,<immersiveengineering:treated_wood:2>
   ]
+  ,"Wireless redstone" :[
+  <rftools:redstone_transmitter_block>
+  ,<rftools:redstone_receiver_block>
+  ]
 };
 
 for name, scrollgroup in scrollGroups{

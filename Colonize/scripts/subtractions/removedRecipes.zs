@@ -55,6 +55,8 @@ recipes.remove(<rftools:fluid_module>);
 recipes.remove(<rftools:clock_module>);
 recipes.remove(<rftools:energyplus_module>);
 recipes.remove(<rftools:inventoryplus_module>);
+recipes.remove(<rftools:redstone_transmitter_block>);
+recipes.remove(<rftools:redstone_receiver_block>);
 //
 recipes.remove(<immersiveengineering:blueprint>);
 //removed electrode crafting
