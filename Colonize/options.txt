@@ -9,7 +9,7 @@ guiScale:2
 particles:1
 bobView:true
 anaglyph3d:false
-maxFps:100
+maxFps:260
 fboEnable:true
 difficulty:0
 fancyGraphics:true
@@ -85,9 +85,6 @@ key_key.hotbar.6:7
 key_key.hotbar.7:8
 key_key.hotbar.8:9
 key_key.hotbar.9:10
-key_quark.keybind.lockBuilding:37
-key_quark.keybind.dropoff:0
-key_quark.keybind.changeHotbar:44
 key_quark.emote.no:0
 key_quark.emote.yes:0
 key_quark.emote.wave:0
@@ -106,12 +103,17 @@ key_quark.emote.dab:0
 key_quark.emote.jet:0
 key_quark.emote.exorcist:0
 key_quark.emote.zombie:0
+key_quark.keybind.dropoff:0
+key_quark.keybind.changeHotbar:44
+key_quark.keybind.lockBuilding:37
 key_keybind.baublesinventory:48
 key_Scene1 start/pause:79
 key_Scene2 start/pause:80
 key_Scene3 start/pause:81
 key_Scene reset:82
 key_Quest Log:38
+key_key.ftbutilities.nbt:49:ALT
+key_key.ftbutilities.trash:211
 key_keybind.railcraft.cart.bed:208
 key_pneumaticcraft.armor.options:22
 key_pneumaticcraft.helmet.hack:35
@@ -171,7 +173,6 @@ key_keybind.railcraft.loco.faster:52:ALT
 key_keybind.railcraft.loco.slower:51:ALT
 key_keybind.railcraft.loco.mode:50:ALT
 key_keybind.railcraft.loco.whistle:49:ALT
-key_Profile GUI:210
 soundCategory_master:1.0
 soundCategory_music:0.0
 soundCategory_record:1.0
