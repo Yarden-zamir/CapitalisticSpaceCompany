@@ -25,3 +25,9 @@ lib.renameBulk(
       <railcraft:generic:5>:"Treated Wood Log",
     }
 );
+
+lib.renameBulk(
+  {
+    <modularmachinery:blockcasing>:"Machine Frame",
+  }
+);
