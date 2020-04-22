@@ -73,8 +73,6 @@ rivergrate.removeRecipe(<factorytech:ore_dust:17>);
 rivergrate.removeRecipe(<factorytech:ore_dust:16>);
 rivergrate.removeRecipe(<factorytech:ore_dust:15>);
 
-recipes.remove(<magneticraft:inserter>,false);
-recipes.remove(<magneticraft:multiblock_parts>,false);
 
 //
 recipes.removeByRecipeName("thermaldynamics:duct_64");
@@ -87,22 +85,6 @@ recipes.remove(<industrialrenewal:fence_big_corner>);
 recipes.removeShapeless(<industrialrenewal:fence_big_column>, [<industrialrenewal:fence_big_corner>]);
 
 //
-recipes.remove(<magneticraft:big_electric_furnace>);
-recipes.remove(<magneticraft:steam_turbine>);
-recipes.remove(<magneticraft:big_steam_boiler>);
-recipes.remove(<magneticraft:big_combustion_chamber>);
-recipes.remove(<magneticraft:refinery>);
-recipes.remove(<magneticraft:oil_heater>);
-recipes.remove(<magneticraft:hydraulic_press>);
-recipes.remove(<magneticraft:solar_panel>);
-recipes.remove(<magneticraft:shelving_unit>);
-recipes.remove(<magneticraft:steam_engine>);
-recipes.remove(<magneticraft:grinder>);
-recipes.remove(<magneticraft:sieve>);
-recipes.remove(<magneticraft:solar_tower>);
-recipes.remove(<magneticraft:solar_mirror>);
-recipes.remove(<magneticraft:container>);
-recipes.remove(<magneticraft:pumpjack>);
 
 //
 

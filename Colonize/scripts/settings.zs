@@ -3,7 +3,7 @@ import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.IItemStack;
 import crafttweaker.formatting.IFormattedText;
 
-static showDisabled as bool = false;
+static showDisabled as bool = true;
 static toolTipForDisabled as IFormattedText = format.darkRed("disabled");
 static showRestricteddItemsForSurvivalPlayers as bool = false; //items like creative tanks and upgrades and such
 static showRestrictedItemsForCreateivePlayers as bool = true; //

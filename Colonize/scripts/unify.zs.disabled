@@ -23,6 +23,3 @@ for furnaceRecipe in furnaceRecipes{
   }
 }
 //manual part (for mods that don't support the automatic process)
-if(loadedMods.contains("magneticraft")){
-  furnace.remove(<magneticraft:ingots:2>);
-}

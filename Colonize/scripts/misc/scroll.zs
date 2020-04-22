@@ -105,25 +105,6 @@ scrollGroups = {
     ,<immersivepetroleum:schematic>.withTag({multiblock: "IP:Pumpjack"})
     ,<immersivepetroleum:schematic>.withTag({multiblock: "IE:ExcavatorDemo"})
   ]
-  ,"magneticraft blueprints":[
-    <magneticraft:guide_book>
-    ,<magneticraft:big_electric_furnace>
-    ,<magneticraft:steam_turbine>
-    ,<magneticraft:big_steam_boiler>
-    ,<magneticraft:big_combustion_chamber>
-    ,<magneticraft:refinery>
-    ,<magneticraft:oil_heater>
-    ,<magneticraft:hydraulic_press>
-    ,<magneticraft:solar_panel>
-    ,<magneticraft:shelving_unit>
-    ,<magneticraft:steam_engine>
-    ,<magneticraft:grinder>
-    ,<magneticraft:sieve>
-    ,<magneticraft:solar_tower>
-    ,<magneticraft:solar_mirror>
-    ,<magneticraft:container>
-    ,<magneticraft:pumpjack>
-  ]
   ,"Luminizers":[
       <botania:lightrelay:0>
       ,<botania:lightrelay:1>
