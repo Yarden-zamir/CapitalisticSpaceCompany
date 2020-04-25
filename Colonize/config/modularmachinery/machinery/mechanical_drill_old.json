@@ -1,0 +1,100 @@
+{
+    "registryname": "modular_mechanical_drill_old",
+    "localizedname": "Mechanical Drill",
+    "color": "15151F",
+    "parts": [
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+              "modularmachinery:blockinputbus@0",
+              "modularmachinery:blockoutputbus@0",
+              "quark:iron_plate@0"
+            ]
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "z": 0,
+          "elements": [
+            "modularmachinery:blockinputbus@0",
+            "modularmachinery:blockoutputbus@0",
+            "quark:iron_plate@0"
+          ]
+        },
+        {
+            "x": [-1,0,1],
+            "y": 0,
+            "z": [1,2],
+            "elements": [
+              "modularmachinery:blockinputbus@0",
+              "modularmachinery:blockoutputbus@0",
+              "quark:iron_plate@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "minecraft:piston@11"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "minecraft:piston_head@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "minecraft:piston@13"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "minecraft:piston@10"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "minecraft:piston_head@5"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "minecraft:piston_head@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "minecraft:piston@12"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "minecraft:piston_head@4"
+            ]
+        }
+    ]}

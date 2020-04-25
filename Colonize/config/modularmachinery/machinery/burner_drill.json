@@ -1,0 +1,48 @@
+{
+    "registryname": "modular_burner_drill",
+    "localizedname": "Burner Drill",
+    "color": "57575D",
+    "parts": [
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+              "modularmachinery:blockinputbus@0",
+              "modularmachinery:blockoutputbus@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "minecraft:piston@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "minecraft:piston_head@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockinputbus@0",
+                "modularmachinery:blockoutputbus@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "quark:iron_plate_stairs@4"
+            ]
+        }
+    ]}

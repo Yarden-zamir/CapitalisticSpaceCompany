@@ -1,5 +1,5 @@
 AdChimneys-1.12.2-3.5.13.0-build.0471.jar
-AdPother-1.12.2-1.2.2.0-build.0471.jar
+AdPother-1.12.2-1.2.3.0-build.0481.jar
 AdvancedRocketry-1.12.2-1.7.0-209-universal.jar
 AIImprovements-1.12-0.0.1b3.jar
 Alfinivia-0.4hotfix.jar
@@ -50,7 +50,7 @@ ImmersiveEngineering-0.12-92.jar
 immersivepetroleum-1.12.2-1.1.9.jar
 ImmersivePosts-0.1.5.jar
 incorporeal-1.2.4.jar
-IndustrialRenewal_1.12.2-0.17.1.jar
+IndustrialRenewal_1.12.2-0.17.2.jar
 Inspirations-1.12.2-0.2.9.jar
 InventoryTweaks-1.64+dev.151.jar
 inworldcrafting-1.12.2-1.2.0-universal.jar
@@ -69,7 +69,7 @@ modular-routers-1.12.2-3.2.2.jar
 modularmachinery-1.12.2-1.10.0.jar
 MouseTweaks-2.10-mc1.12.2.jar
 MTLib-3.0.6.jar
-NuclearCraft-2o.2.1-1.12.2.jar
+NuclearCraft-2o.2.3-1.12.2.jar
 obfuscate-0.4.2-1.12.2.jar
 omlib-1.12.2-3.2.0-254.jar
 OpenBlocks-1.12.2-1.8.1.jar
