@@ -1,0 +1,139 @@
+{
+  "registryname": "modular_mechanical_drill",
+  "localizedname": "Mechanical Drill",
+  "color": "525252",
+    "parts": [
+        {
+          "x": 1,
+          "y": 0,
+          "z": 0,
+          "elements": [
+            "immersiveengineering:metal_decoration1@1",
+            "immersiveengineering:metal_decoration1@5",
+            "immersiveengineering:wooden_decoration@1"
+          ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1",
+                "immersiveengineering:metal_decoration1@5",
+                "immersiveengineering:wooden_decoration@1"
+
+            ]
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "z": 0,
+          "elements": [
+            "quark:iron_plate_stairs@1"
+          ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "minecraft:piston@9"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "minecraft:piston@13"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "minecraft:piston_head@4"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "minecraft:piston_head@5"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "minecraft:piston@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "minecraft:piston@12"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "minecraft:piston_head@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "quark:iron_plate_stairs@5"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "quark:iron_plate_stairs@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "casings_item"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "minecraft:piston_head@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "quark:iron_plate_stairs@4"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "casings_item"
+            ]
+        }
+    ]}

@@ -9,7 +9,8 @@
             "z": 0,
             "elements": [
               "modularmachinery:blockinputbus@0",
-              "modularmachinery:blockoutputbus@0"
+              "modularmachinery:blockoutputbus@0",
+              "modularmachinery:blockfluidinputhatch@2"
             ]
         },
         {
@@ -34,7 +35,8 @@
             "z": 0,
             "elements": [
                 "modularmachinery:blockinputbus@0",
-                "modularmachinery:blockoutputbus@0"
+                "modularmachinery:blockoutputbus@0",
+                "modularmachinery:blockfluidinputhatch@2"
             ]
         },
         {
