@@ -29,7 +29,7 @@ function applyRecipes(){
     machineRegName+"_"+<minecraft:coal>.name+"_w_"+"Iron", machineRegName, 55
   );
   r.addItemInput(<minecraft:coal>);
-  var burnChance = (<minecraft:coal>.burnTime/6000+0.1);
+  var burnChance = ((<minecraft:coal>.burnTime/6000)+0.1f);
   r.setChance(burnChance);
   r.addItemOutput(<minecraft:iron_ore>);
   r.addMineralInput("Iron",-1);
