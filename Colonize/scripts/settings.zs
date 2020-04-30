@@ -7,6 +7,7 @@ static showDisabled as bool = true;
 static toolTipForDisabled as IFormattedText = format.darkRed("disabled");
 static showRestricteddItemsForSurvivalPlayers as bool = false; //items like creative tanks and upgrades and such
 static showRestrictedItemsForCreateivePlayers as bool = true; //
+static excavatorFailChance as double = 0.6667;
 // static gamestageHideRules as = {
 //
 // };
