@@ -90,6 +90,7 @@ RecurrentComplex-1.4.8.2.jar
 RedstoneFlux-1.12-2.1.1.1-universal.jar
 rftools-1.12-7.73.jar
 rftoolsctrl-1.12-2.0.2.jar
+rsgauges-1.12.2-1.2.3-b1.jar
 sonarcore-1.12.2-5.0.19-20.jar
 StorageDrawers-1.12.2-5.4.1.jar
 Surge-1.12.2-2.0.79.jar
