@@ -7,6 +7,7 @@ import mods.immersiveengineering.Excavator;
 
 
 #priority 70
+static machineRegName as string = "modular_burner_drill";
 
 //
 static typicalProcessingTime as int = 30;
@@ -18,6 +19,11 @@ static baseEnergyRec as int = 1; //move to settings
 static min as int = 1;
 static max as int = 38401;
 
+function addRecipe(IItemStack output,IItemStack input){
+  var r = RecipeBuilder.newBuilder(
+    machineRegName+"_"+input.name+"_w_"+output.name, machineRegName, 55
+  );
+}
 // function addOre(ore as IItemStack, inputMineral as string){ // ore is the output item that the player gets and inputMineral is the input mineral from IE's registery
 //   //loop through all possilbe fuels and recreate the recipe with them as an option
 // }
