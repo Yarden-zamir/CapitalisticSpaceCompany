@@ -211,6 +211,7 @@ lib.disableItems([
   ,<rftools:remote_storage>
   ,<rftools:modular_storage>
   ,<rftools:dump_module>
+  ,<rftools:item_filter>
 ]);
 lib.disableItems([
   <effortlessbuilding:reach_upgrade1>
