@@ -3,33 +3,20 @@ import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.IItemStack;
 import crafttweaker.formatting.IFormattedText;
 
+//Displays the disabled items in JEI if true for debuging
 static showDisabled as bool = true;
+
+//The tooltip added to disabled items
 static toolTipForDisabled as IFormattedText = format.darkRed("disabled");
-static showRestricteddItemsForSurvivalPlayers as bool = false; //items like creative tanks and upgrades and such
-static showRestrictedItemsForCreateivePlayers as bool = true; //
+
+//Items like creative tanks and upgrades and such and their JEI rules
+static showRestricteddItemsForSurvivalPlayers as bool = false;
+static showRestrictedItemsForCreateivePlayers as bool = true;
+
+// The chance the excavator would fail. This variable along with speed changes
+// in the configs are meant to balance the excavator and the other miners in terms of efficiency and speed
 static excavatorFailChance as double = 0.6667;
+
 // static gamestageHideRules as = {
 //
 // };
-//change to a dynamic loader system
-static ingotsUnified as IItemStack[IOreDictEntry] =
-{
-  <ore:ingotSilver>: <thermalfoundation:material:130>,
-  <ore:ingotLead>: <thermalfoundation:material:131>,
-  <ore:ingotBronze>: <thermalfoundation:material:163>,
-  <ore:ingotTin>: <thermalfoundation:material:129>,
-  <ore:ingotCopper>: <immersiveengineering:metal>,
-  <ore:ingotAluminum>: <thermalfoundation:material:132>,
-  <ore:ingotNickel>: <thermalfoundation:material:133>,
-  <ore:ingotPlatinum>: <thermalfoundation:material:134>,
-  <ore:ingotIridium>: <thermalfoundation:material:135>,
-  <ore:ingotMithril>: <thermalfoundation:material:136>,
-  <ore:ingotSteel>: <immersiveengineering:metal:8>,
-  <ore:ingotElectrum>: <thermalfoundation:material:161>,
-  <ore:ingotInvar>: <thermalfoundation:material:162>,
-  <ore:ingotConstantan>: <thermalfoundation:material:164>,
-  <ore:ingotSignalum>: <thermalfoundation:material:165>,
-  <ore:ingotLumium>: <thermalfoundation:material:166>,
-  <ore:ingotEnderium>: <thermalfoundation:material:167>,
-  <ore:ingotUranium>: <immersiveengineering:metal:5>
-} ;
