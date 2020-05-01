@@ -11,6 +11,8 @@ import mods.immersiveengineering.AlloySmelter;
 import mods.immersiveengineering.ArcFurnace;
 import mods.immersiveengineering.Crusher;
 import mods.factorytech.DrillGrinder;
+import mods.immersiveengineering.Blueprint;
+
 #priority 90
 static disabledItems as IItemStack[]= [];
 
@@ -18,33 +20,6 @@ function disableItem(item as IItemStack){
   //any operation on a disabled item happends here
   item.addTooltip(settings.toolTipForDisabled);
   disabledItems += item;
-  if (loadedMods.contains("factorytech")){
-    DrillGrinder.removeRecipe(item);
-  }
-  if (loadedMods.contains("immersiveengineering")&&false){
-    MetalPress.addRecipe(item, <minecraft:stone>, <minecraft:stone>, 1);
-    MetalPress.removeRecipe(item);
-    //Alloy Smelter
-    AlloySmelter.addRecipe(item, <minecraft:stone>, <minecraft:stone>, 1);
-    AlloySmelter.removeRecipe(item);
-    //ArcFurnace
-    ArcFurnace.addRecipe(item, <minecraft:stone>, <minecraft:stone>, 1, 1);
-    ArcFurnace.removeRecipe(item);
-    //
-    Crusher.addRecipe(item, <minecraft:stone>, 1);
-    Crusher.removeRecipe(item);
-    //Crusher.removeRecipesForInput(item);
-  }
-  //smeltry
-  if(loadedMods.contains("tconstruct")){
-    Casting.removeTableRecipe(item);
-    Casting.removeBasinRecipe(item);
-    if (!isNull(item.liquid)){
-      print("liquid is beeing removed from smeltery");
-      Alloy.removeRecipe(item.liquid);
-    }
-  }
-
   //furnace
   furnace.remove(item);
   //crafting table removal
@@ -81,6 +56,18 @@ function rename(item as IItemStack, newName as string){
 function renameBulk(list as string[IItemStack]){
   for item, newName in list{
     rename(item,newName);
+  }
+}
+
+function removeFromBlueprintBulk(items as IItemStack[]){
+  for item in items {
+    Blueprint.removeRecipe(item);
+  }
+}
+
+function removeRecipeBulk(items as IItemStack[]){
+  for item in items {
+    recipes.remove(item);
   }
 }
 
