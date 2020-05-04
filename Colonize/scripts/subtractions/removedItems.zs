@@ -8,7 +8,9 @@ import mods.immersiveengineering.Blueprint;
 #priority 80
 lib.disableItems([
 ]);
-
+lib.disableItems([//tcomplement
+  <tcomplement:materials>
+]);
 lib.disableItems([
   <thermalfoundation:ore:*>
   ,<thermalfoundation:storage:*>
