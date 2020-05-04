@@ -19,7 +19,7 @@ static baseEnergyRec as int = 1; //move to settings
 static min as int = 1;
 static max as int = 38401;
 
-function addRecipe(IItemStack output,IItemStack input){
+function addRecipe(output as IItemStack,input as IItemStack){
   var r = RecipeBuilder.newBuilder(
     machineRegName+"_"+input.name+"_w_"+output.name, machineRegName, 55
   );
