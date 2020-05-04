@@ -11,48 +11,48 @@ lib.removeRecipeBulk([//[modname]
 ]);
 lib.removeRecipeBulk([//IE
   <immersiveengineering:metal_device1:7>
-  ,<immersiveengineering:blueprint>)
+  ,<immersiveengineering:blueprint>
   //removed electrode crafting
-  ,<immersiveengineering:graphite_electrode>)
+  ,<immersiveengineering:graphite_electrode>
   //scroll groups
-  ,<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:extract"}))
-  ,<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:uncontrolled"}))
-  ,<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:dropper"}))
-  ,<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:vertical"}))
-  ,<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:splitter"}))
-  ,<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:droppercovered"}))
-  ,<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:verticalcovered"}))
-  ,<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:extractcovered"}))
-  ,<immersiveengineering:connector:3>)
-  ,<immersiveengineering:connector:5>)
+  ,<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:extract"})
+  ,<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:uncontrolled"})
+  ,<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:dropper"})
+  ,<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:vertical"})
+  ,<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:splitter"})
+  ,<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:droppercovered"})
+  ,<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:verticalcovered"})
+  ,<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:extractcovered"})
+  ,<immersiveengineering:connector:3>
+  ,<immersiveengineering:connector:5>
 
 ]);
 lib.removeRecipeBulk([//rftools
   //scroll groups
-  ,<rftools:shape_card:1>)
-  ,<rftools:shape_card:3>)
-  ,<rftools:shape_card:4>)
-  ,<rftools:shape_card:5>)
-  ,<rftools:shape_card:6>)
-  ,<rftools:shape_card:7>)
-  ,<rftools:shape_card:9>)
-  ,<rftools:shape_card:10>)
-  ,<rftoolscontrol:interaction_module>)
-  ,<rftoolscontrol:console_module>)
-  ,<rftoolscontrol:vectorart_module>)
-  ,<rftools:counterplus_module>)
-  ,<rftools:redstone_module>)
-  ,<rftools:elevator_button_module>)
-  ,<rftools:button_module>)
-  ,<rftools:computer_module>)
-  ,<rftools:machineinformation_module>)
-  ,<rftools:fluidplus_module>)
-  ,<rftools:fluid_module>)
-  ,<rftools:clock_module>)
-  ,<rftools:energyplus_module>)
-  ,<rftools:inventoryplus_module>)
-  ,<rftools:redstone_transmitter_block>)
-  ,<rftools:redstone_receiver_block>)
+  <rftools:shape_card:1>
+  ,<rftools:shape_card:3>
+  ,<rftools:shape_card:4>
+  ,<rftools:shape_card:5>
+  ,<rftools:shape_card:6>
+  ,<rftools:shape_card:7>
+  ,<rftools:shape_card:9>
+  ,<rftools:shape_card:10>
+  ,<rftoolscontrol:interaction_module>
+  ,<rftoolscontrol:console_module>
+  ,<rftoolscontrol:vectorart_module>
+  ,<rftools:counterplus_module>
+  ,<rftools:redstone_module>
+  ,<rftools:elevator_button_module>
+  ,<rftools:button_module>
+  ,<rftools:computer_module>
+  ,<rftools:machineinformation_module>
+  ,<rftools:fluidplus_module>
+  ,<rftools:fluid_module>
+  ,<rftools:clock_module>
+  ,<rftools:energyplus_module>
+  ,<rftools:inventoryplus_module>
+  ,<rftools:redstone_transmitter_block>
+  ,<rftools:redstone_receiver_block>
 ]);
 lib.removeRecipeBulk([//vanilla
   <minecraft:fire_charge>
@@ -65,9 +65,9 @@ lib.removeRecipeBulk([//IR
   <modularrouters:blank_module>
 ]);
 lib.removeRecipeBulk([//[modname]
-  <botania:lightrelay:1>)
-  ,<botania:lightrelay:2>)
-  ,<botania:lightrelay:3>)
+  <botania:lightrelay:1>
+  ,<botania:lightrelay:2>
+  ,<botania:lightrelay:3>
 ]);
 //
 
@@ -82,12 +82,12 @@ lib.removeFromBlueprintBulk([//immersiveengineering
     ,<immersiveengineering:mold>
     ,<immersiveengineering:mold:1>
     ,<immersiveengineering:mold:2>
-    ,<immersiveengineering:mold:2>)
-    ,<immersiveengineering:mold:3>)
-    ,<immersiveengineering:mold:4>)
-    ,<immersiveengineering:mold:5>)
-    ,<immersiveengineering:mold:6>)
-    ,<immersiveengineering:mold:7>)
+    ,<immersiveengineering:mold:2>
+    ,<immersiveengineering:mold:3>
+    ,<immersiveengineering:mold:4>
+    ,<immersiveengineering:mold:5>
+    ,<immersiveengineering:mold:6>
+    ,<immersiveengineering:mold:7>
 ]);
 //rivergrate
 rivergrate.removeRecipe(<factorytech:ore_dust:17>);
