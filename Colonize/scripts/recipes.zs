@@ -5,3 +5,4 @@
 //#Add
 
 //File End
+mods.advancedrocketry.RollingMachine.addRecipe(<minecraft:log>*1, 80, 100, 100, <minecraft:planks>*4); 
