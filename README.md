@@ -11,6 +11,6 @@ The planet won't stand idly by while you try to get rich from it's lifeblood… 
 ---
 # Gameplay components
 - Factories! - 
-    You will be pushed to your limits manufacturing many things in intricate ways. Complex logistics puzzles, uniqe assembly lines and crazy machinery. Those along with a lack of easy solutions to save you will force you to put your mind in the meat grinder.
+    You will be pushed to your limits manufacturing many things in intricate ways. Complex logistics puzzles, uniqe assembly lines and crazy machinery. Those along with a lack of easy solutions to save you will force you to put your mind to the meat grinder.
 - Trade and Economy!
     You will trade back and forth with many different companies for different reasons, each company can help you with specific things and each has their needs and wants. An economy that is affected by each small move. You might stop suppling wood to the main coal coke supplier of *Zero-G toiletries* which forces them to stop making synthetic marble 
